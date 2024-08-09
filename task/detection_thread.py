@@ -21,11 +21,11 @@ class DetectionLightingThread(QThread):
         achievement_list_path = os.path.join(current_path, "assets", "achievements", f"{self.achievement_list}.json")
         achievement_list = open_file(achievement_list_path)
         img_list = detect_image_by_path(self.fload)
-        ocr_achievement_list = detect_achievement_list(img_list)
+        ocr_list = detect_achievement_list(img_list)
         not_done_list = []
         for achievement_item in achievement_list:
             objective = achievement_item.get('Objective')
-            if objective not in ocr_achievement_list:
+            if objective in ocr_list:
                 not_done_list.append(achievement_item)
         
         self.detectionFinished.emit(not_done_list)

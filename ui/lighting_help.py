@@ -115,7 +115,6 @@ class FloadWidget(QWidget):
 
     def achievementComboBoxChanged(self, comboBox):
         self.achievementComboBoxValue = self.achievementComboBox.currentText()
-        print(self.achievementComboBoxValue)
     
     def emit_detection_signal(self):
         self.detectionButton.setEnabled(False)
@@ -128,7 +127,7 @@ class DetectionTableWidget(QWidget):
         self.setObjectName("DetectionListWidget")
         self.vBoxLayout = QVBoxLayout(self)
 
-        self.detectionListLabel = BodyLabel("以下成就未完成：", self)
+        self.detectionListLabel = BodyLabel("", self)
         self.detectionListLabel.hide()
         self.detectionListLabel.setAlignment(Qt.AlignmentFlag.AlignLeft)
 
@@ -148,11 +147,12 @@ class DetectionTableWidget(QWidget):
     def update_table(self, detection_list):
         self.detection_list = detection_list
 
-        print(detection_list)
         if len(detection_list) == 0:
             self.detectionListLabel.hide()
+            self.table.clear()
             return
 
+        self.detectionListLabel.setText(f"检测到 {len(detection_list)} 个未完成的成就")
         self.detectionListLabel.show()
         self.table.setRowCount(len(detection_list))
         
