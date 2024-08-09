@@ -1,0 +1,458 @@
+[
+    {
+        "Objective": "远古灯塔传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/3b/Illuminating_Skywatch_Archipelago_-_01_Beacon_of_Ages_Waypoint_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_01_Beacon_of_Ages_Waypoint_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/95/Illuminating_Skywatch_Archipelago_-_01_Beacon_of_Ages_Waypoint_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_01_Beacon_of_Ages_Waypoint_location.jpg",
+        "Closest landmark": "远古灯塔传送点",
+        "Game_link": "[&BCsOAAA=]",
+        "Notes": "在南边的东柱下"
+    },
+    {
+        "Objective": "卓克纳之光传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/69/Illuminating_Skywatch_Archipelago_-_02_Droknar%27s_Light_Waypoint_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_02_Droknar%27s_Light_Waypoint_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/0/03/Illuminating_Skywatch_Archipelago_-_02_Droknar%27s_Light_Waypoint_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_02_Droknar%27s_Light_Waypoint_location.jpg",
+        "Closest landmark": "卓克纳之光传送点",
+        "Game_link": "[&BL4NAAA=]",
+        "Notes": "在传送点和锻炉入口上方的悬崖上"
+    },
+    {
+        "Objective": "星界圣盾营地传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f4/Illuminating_Skywatch_Archipelago_-_03_Astral_Ward_Encampment_Waypoint_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_03_Astral_Ward_Encampment_Waypoint_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/93/Illuminating_Skywatch_Archipelago_-_03_Astral_Ward_Encampment_Waypoint_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_03_Astral_Ward_Encampment_Waypoint_location.jpg",
+        "Closest landmark": "星界圣盾营地传送点",
+        "Game_link": "[&BA4OAAA=]",
+        "Notes": "传送点以东的岩石后面"
+    },
+    {
+        "Objective": "拉塔新城大道传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/4/49/Illuminating_Skywatch_Archipelago_-_04_Rata_Novus_Promenade_Waypoint_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_04_Rata_Novus_Promenade_Waypoint_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/8/80/Illuminating_Skywatch_Archipelago_-_04_Rata_Novus_Promenade_Waypoint_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_04_Rata_Novus_Promenade_Waypoint_location.jpg",
+        "Closest landmark": "拉塔新城大道传送点",
+        "Game_link": "[&BOANAAA=]",
+        "Notes": "传送点西边的两个大灯之间"
+    },
+    {
+        "Objective": "格伦霍夫难民营传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/33/Illuminating_Skywatch_Archipelago_-_05_Garenhoff_Refugee_Camp_Waypoint_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_05_Garenhoff_Refugee_Camp_Waypoint_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/d/d1/Illuminating_Skywatch_Archipelago_-_05_Garenhoff_Refugee_Camp_Waypoint_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_05_Garenhoff_Refugee_Camp_Waypoint_location.jpg",
+        "Closest landmark": "格伦霍夫难民营传送点",
+        "Game_link": "[&BBUOAAA=]",
+        "Notes": "传送点以西的一棵树后面"
+    },
+    {
+        "Objective": "观测营地传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f1/Illuminating_Skywatch_Archipelago_-_06_Observation_Camp_Waypoint_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_06_Observation_Camp_Waypoint_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/0/01/Illuminating_Skywatch_Archipelago_-_06_Observation_Camp_Waypoint_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_06_Observation_Camp_Waypoint_location.jpg",
+        "Closest landmark": "观测营地传送点",
+        "Game_link": "[&BEYOAAA=]",
+        "Notes": "传送点东边金色坡道旁边"
+    },
+    {
+        "Objective": "红隼会的誓言传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/0b/Illuminating_Skywatch_Archipelago_-_07_Kestrel%27s_Vow_Waypoint_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_07_Kestrel%27s_Vow_Waypoint_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/2/22/Illuminating_Skywatch_Archipelago_-_07_Kestrel%27s_Vow_Waypoint_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_07_Kestrel%27s_Vow_Waypoint_location.jpg",
+        "Closest landmark": "红隼会的誓言传送点",
+        "Game_link": "[&BD8OAAA=]",
+        "Notes": "军需官修平身后的屏幕后面"
+    },
+    {
+        "Objective": "天空哨站瞭望点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/4/40/Illuminating_Skywatch_Archipelago_-_08_Skywatch_Lookout_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_08_Skywatch_Lookout_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/6/60/Illuminating_Skywatch_Archipelago_-_08_Skywatch_Lookout_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_08_Skywatch_Lookout_location.jpg",
+        "Closest landmark": "天空哨站瞭望点",
+        "Game_link": "[&BBsOAAA=]",
+        "Notes": "飞天麟龙训练师身后左边的树后面"
+    },
+    {
+        "Objective": "布里埃拉的厨房",
+        "Map": "https://wiki.guildwars2.com//images/thumb/1/1a/Illuminating_Skywatch_Archipelago_-_09_Briella%27s_Kitchen_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_09_Briella%27s_Kitchen_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e2/Illuminating_Skywatch_Archipelago_-_09_Briella%27s_Kitchen_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_09_Briella%27s_Kitchen_location.jpg",
+        "Closest landmark": "布里埃拉的厨房",
+        "Game_link": "[&BMwNAAA=]",
+        "Notes": "观察点东边的墙后"
+    },
+    {
+        "Objective": "星界圣盾餐厅",
+        "Map": "https://wiki.guildwars2.com//images/thumb/4/4b/Illuminating_Skywatch_Archipelago_-_10_Astral_Ward_Dining_Hall_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_10_Astral_Ward_Dining_Hall_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/16/Illuminating_Skywatch_Archipelago_-_10_Astral_Ward_Dining_Hall_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_10_Astral_Ward_Dining_Hall_location.jpg",
+        "Closest landmark": "星界圣盾餐厅",
+        "Game_link": "[&BEEOAAA=]",
+        "Notes": "在你进入大厅后的左墙上。"
+    },
+    {
+        "Objective": "荒废的壁垒",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/6c/Illuminating_Skywatch_Archipelago_-_11_The_Ruined_Rampart_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_11_The_Ruined_Rampart_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/16/Illuminating_Skywatch_Archipelago_-_11_The_Ruined_Rampart_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_11_The_Ruined_Rampart_location.jpg",
+        "Closest landmark": "荒废的壁垒",
+        "Game_link": "[&BOUNAAA=]",
+        "Notes": "在西屋顶上"
+    },
+    {
+        "Objective": "教团纪念碑",
+        "Map": "https://wiki.guildwars2.com//images/thumb/7/76/Illuminating_Skywatch_Archipelago_-_12_Monument_to_the_Order_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_12_Monument_to_the_Order_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/f/f7/Illuminating_Skywatch_Archipelago_-_12_Monument_to_the_Order_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_12_Monument_to_the_Order_location.jpg",
+        "Closest landmark": "教团纪念碑",
+        "Game_link": "[&BFMOAAA=]",
+        "Notes": "观察点的阳台"
+    },
+    {
+        "Objective": "远古灯塔指挥中心",
+        "Map": "https://wiki.guildwars2.com//images/thumb/8/8c/Illuminating_Skywatch_Archipelago_-_13_Beacon_of_Ages_Command_Center_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_13_Beacon_of_Ages_Command_Center_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/a/a2/Illuminating_Skywatch_Archipelago_-_13_Beacon_of_Ages_Command_Center_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_13_Beacon_of_Ages_Command_Center_location.jpg",
+        "Closest landmark": "远古灯塔指挥中心",
+        "Game_link": "[&BCsOAAA=]",
+        "Notes": "二楼通过灯塔指挥中心门。在东边的板条箱上。"
+    },
+    {
+        "Objective": "训练高阁",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/66/Illuminating_Skywatch_Archipelago_-_14_Training_Pavilion_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_14_Training_Pavilion_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/3/3e/Illuminating_Skywatch_Archipelago_-_14_Training_Pavilion_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_14_Training_Pavilion_location.jpg",
+        "Closest landmark": "训练高阁",
+        "Game_link": "[&BCMOAAA=]",
+        "Notes": "小木屋里"
+    },
+    {
+        "Objective": "惠特曼的冰架",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/05/Illuminating_Skywatch_Archipelago_-_15_Witman%27s_Ice_Shelf_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_15_Witman%27s_Ice_Shelf_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/d/d7/Illuminating_Skywatch_Archipelago_-_15_Witman%27s_Ice_Shelf_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_15_Witman%27s_Ice_Shelf_location.jpg",
+        "Closest landmark": "惠特曼的冰架",
+        "Game_link": "[&BMANAAA=]",
+        "Notes": "观察点以南一些"
+    },
+    {
+        "Objective": "国王加里斯·铁锤纪念碑",
+        "Map": "https://wiki.guildwars2.com//images/thumb/d/d9/Illuminating_Skywatch_Archipelago_-_16_Monument_to_King_Jalis_Ironhammer_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_16_Monument_to_King_Jalis_Ironhammer_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/ea/Illuminating_Skywatch_Archipelago_-_16_Monument_to_King_Jalis_Ironhammer_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_16_Monument_to_King_Jalis_Ironhammer_location.jpg",
+        "Closest landmark": "国王加里斯·铁锤纪念碑",
+        "Game_link": "[&BP8NAAA=]",
+        "Notes": "雕像两腿之间"
+    },
+    {
+        "Objective": "储备军械库",
+        "Map": "https://wiki.guildwars2.com//images/thumb/b/b1/Illuminating_Skywatch_Archipelago_-_17_Reserve_Arsenal_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_17_Reserve_Arsenal_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/eb/Illuminating_Skywatch_Archipelago_-_17_Reserve_Arsenal_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_17_Reserve_Arsenal_location.jpg",
+        "Closest landmark": "储备军械库",
+        "Game_link": "[&BDEOAAA=]",
+        "Notes": "在建筑物屋顶旁边的山上。"
+    },
+    {
+        "Objective": "德里莫大厅",
+        "Map": "https://wiki.guildwars2.com//images/thumb/1/19/Illuminating_Skywatch_Archipelago_-_18_Hall_of_Deldrimor_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_18_Hall_of_Deldrimor_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/ed/Illuminating_Skywatch_Archipelago_-_18_Hall_of_Deldrimor_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_18_Hall_of_Deldrimor_location.jpg",
+        "Closest landmark": "德里莫大厅",
+        "Game_link": "[&BNQNAAA=]",
+        "Notes": "进入大厅右转，灯在走廊的尽头。"
+    },
+    {
+        "Objective": "卓克纳的登陆点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f0/Illuminating_Skywatch_Archipelago_-_19_Droknar%27s_Landing_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_19_Droknar%27s_Landing_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/77/Illuminating_Skywatch_Archipelago_-_19_Droknar%27s_Landing_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_19_Droknar%27s_Landing_location.jpg",
+        "Closest landmark": "卓克纳的登陆点",
+        "Game_link": "[&BPoNAAA=]",
+        "Notes": "在站台的边缘，靠近桥。"
+    },
+    {
+        "Objective": "卓克纳熔炉",
+        "Map": "https://wiki.guildwars2.com//images/thumb/b/b9/Illuminating_Skywatch_Archipelago_-_20_Droknar%27s_Forge_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_20_Droknar%27s_Forge_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e9/Illuminating_Skywatch_Archipelago_-_20_Droknar%27s_Forge_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_20_Droknar%27s_Forge_location.jpg",
+        "Closest landmark": "卓克纳熔炉",
+        "Game_link": "[&BLcNAAA=]",
+        "Notes": "在中间的斜坡下。"
+    },
+    {
+        "Objective": "艾斯莫瞭望台",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/3a/Illuminating_Skywatch_Archipelago_-_21_Esme%27s_Overlook_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_21_Esme%27s_Overlook_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/2/21/Illuminating_Skywatch_Archipelago_-_21_Esme%27s_Overlook_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_21_Esme%27s_Overlook_location.jpg",
+        "Closest landmark": "艾斯莫瞭望台",
+        "Game_link": "[&BDIOAAA=]",
+        "Notes": "On the base of the southern part of the big rock arch."
+    },
+    {
+        "Objective": "拉瓦特废墟",
+        "Map": "https://wiki.guildwars2.com//images/thumb/4/4c/Illuminating_Skywatch_Archipelago_-_22_Ruins_of_Rhawat_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_22_Ruins_of_Rhawat_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/12/Illuminating_Skywatch_Archipelago_-_22_Ruins_of_Rhawat_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_22_Ruins_of_Rhawat_location.jpg",
+        "Closest landmark": "拉瓦特废墟",
+        "Game_link": "[&BDMOAAA=]",
+        "Notes": "Among the ruins on the eastern side."
+    },
+    {
+        "Objective": "巴尔克的营地",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f5/Illuminating_Skywatch_Archipelago_-_23_Balkor%27s_Camp_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_23_Balkor%27s_Camp_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/5/59/Illuminating_Skywatch_Archipelago_-_23_Balkor%27s_Camp_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_23_Balkor%27s_Camp_location.jpg",
+        "Closest landmark": "巴尔克的营地",
+        "Game_link": "[&BPUNAAA=]",
+        "Notes": "Inside the large tent, on the left."
+    },
+    {
+        "Objective": "审判王座",
+        "Map": "https://wiki.guildwars2.com//images/thumb/a/af/Illuminating_Skywatch_Archipelago_-_24_Throne_of_Judgment_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_24_Throne_of_Judgment_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/1a/Illuminating_Skywatch_Archipelago_-_24_Throne_of_Judgment_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_24_Throne_of_Judgment_location.jpg",
+        "Closest landmark": "审判王座",
+        "Game_link": "[&BLoNAAA=]",
+        "Notes": "Inside the room, in the alcove on the left."
+    },
+    {
+        "Objective": "燃烧堡垒",
+        "Map": "https://wiki.guildwars2.com//images/thumb/2/2b/Illuminating_Skywatch_Archipelago_-_25_The_Burning_Fortress_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_25_The_Burning_Fortress_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/7f/Illuminating_Skywatch_Archipelago_-_25_The_Burning_Fortress_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_25_The_Burning_Fortress_location.jpg",
+        "Closest landmark": "燃烧堡垒",
+        "Game_link": "[&BCwOAAA=]",
+        "Notes": "On the side of the building."
+    },
+    {
+        "Objective": "沙瀑",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/07/Illuminating_Skywatch_Archipelago_-_26_The_Falling_Sands_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_26_The_Falling_Sands_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/93/Illuminating_Skywatch_Archipelago_-_26_The_Falling_Sands_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_26_The_Falling_Sands_location.jpg",
+        "Closest landmark": "沙瀑",
+        "Game_link": "[&BAAOAAA=]",
+        "Notes": "From  Astral Ward Encampment Waypoint — [&BA4OAAA=], go north west and up onto the rocks above. The lantern is near a skyscale on a wooden platform."
+    },
+    {
+        "Objective": "阿妮萨的风车",
+        "Map": "https://wiki.guildwars2.com//images/thumb/a/ab/Illuminating_Skywatch_Archipelago_-_27_Aanisah%27s_Windmill_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_27_Aanisah%27s_Windmill_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/5/5f/Illuminating_Skywatch_Archipelago_-_27_Aanisah%27s_Windmill_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_27_Aanisah%27s_Windmill_location.jpg",
+        "Closest landmark": "阿妮萨的风车",
+        "Game_link": "[&BPMNAAA=]",
+        "Notes": "On top of the building."
+    },
+    {
+        "Objective": "法里桑村庄",
+        "Map": "https://wiki.guildwars2.com//images/thumb/2/22/Illuminating_Skywatch_Archipelago_-_28_Farisan_Village_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_28_Farisan_Village_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/b/b4/Illuminating_Skywatch_Archipelago_-_28_Farisan_Village_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_28_Farisan_Village_location.jpg",
+        "Closest landmark": "法里桑村庄",
+        "Game_link": "[&BDgOAAA=]",
+        "Notes": "On top of the building."
+    },
+    {
+        "Objective": "格伦霍夫难民营",
+        "Map": "https://wiki.guildwars2.com//images/thumb/4/44/Illuminating_Skywatch_Archipelago_-_29_Garenhoff_Refugee_Camp_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_29_Garenhoff_Refugee_Camp_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/90/Illuminating_Skywatch_Archipelago_-_29_Garenhoff_Refugee_Camp_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_29_Garenhoff_Refugee_Camp_location.jpg",
+        "Closest landmark": "格伦霍夫难民营",
+        "Game_link": "[&BMsNAAA=]",
+        "Notes": "Behind a tent."
+    },
+    {
+        "Objective": "东部收容所",
+        "Map": "https://wiki.guildwars2.com//images/thumb/1/17/Illuminating_Skywatch_Archipelago_-_30_Eastern_Ward_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_30_Eastern_Ward_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/3/32/Illuminating_Skywatch_Archipelago_-_30_Eastern_Ward_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_30_Eastern_Ward_location.jpg",
+        "Closest landmark": "东部收容所",
+        "Game_link": "[&BNsNAAA=]",
+        "Notes": "Above the point of interest, on a cliff ledge next to one of the houses."
+    },
+    {
+        "Objective": "水手之悲",
+        "Map": "https://wiki.guildwars2.com//images/thumb/d/d4/Illuminating_Skywatch_Archipelago_-_31_Sailor%27s_Lament_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_31_Sailor%27s_Lament_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e3/Illuminating_Skywatch_Archipelago_-_31_Sailor%27s_Lament_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_31_Sailor%27s_Lament_location.jpg",
+        "Closest landmark": "水手之悲",
+        "Game_link": "[&BFYOAAA=]",
+        "Notes": "On the same level as the boat, south east of the POI."
+    },
+    {
+        "Objective": "碎裂的高塔",
+        "Map": "https://wiki.guildwars2.com//images/thumb/d/dd/Illuminating_Skywatch_Archipelago_-_32_The_Fractured_Tower_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_32_The_Fractured_Tower_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e4/Illuminating_Skywatch_Archipelago_-_32_The_Fractured_Tower_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_32_The_Fractured_Tower_location.jpg",
+        "Closest landmark": "碎裂的高塔",
+        "Game_link": "[&BFUOAAA=]",
+        "Notes": "On a rooftop near the fractured tower."
+    },
+    {
+        "Objective": "废弃的实验室",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/3c/Illuminating_Skywatch_Archipelago_-_33_Abandoned_Lab_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_33_Abandoned_Lab_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e5/Illuminating_Skywatch_Archipelago_-_33_Abandoned_Lab_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_33_Abandoned_Lab_location.jpg",
+        "Closest landmark": "废弃的实验室",
+        "Game_link": "[&BAcOAAA=]",
+        "Notes": "Right next to an abandoned asuran lab. Lab is under the floating mountain."
+    },
+    {
+        "Objective": "新凯宁广播终端测试点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/9/90/Illuminating_Skywatch_Archipelago_-_34_N.K._Broadcast_Terminal_Beta_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_34_N.K._Broadcast_Terminal_Beta_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/2/21/Illuminating_Skywatch_Archipelago_-_34_N.K._Broadcast_Terminal_Beta_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_34_N.K._Broadcast_Terminal_Beta_location.jpg",
+        "Closest landmark": "新凯宁广播终端测试点",
+        "Game_link": "[&BCAOAAA=]",
+        "Notes": "On the roof of the building, northern side."
+    },
+    {
+        "Objective": "红隼会的誓言",
+        "Map": "https://wiki.guildwars2.com//images/thumb/7/75/Illuminating_Skywatch_Archipelago_-_35_Kestrel%27s_Vow_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_35_Kestrel%27s_Vow_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/0/0a/Illuminating_Skywatch_Archipelago_-_35_Kestrel%27s_Vow_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_35_Kestrel%27s_Vow_location.jpg",
+        "Closest landmark": "红隼会的誓言",
+        "Game_link": "[&BNENAAA=]",
+        "Notes": "On the roof of a building built on the side of the tree."
+    },
+    {
+        "Objective": "娜迦营地",
+        "Map": "https://wiki.guildwars2.com//images/thumb/e/e6/Illuminating_Skywatch_Archipelago_-_36_Naga_Encampment_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_36_Naga_Encampment_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/76/Illuminating_Skywatch_Archipelago_-_36_Naga_Encampment_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_36_Naga_Encampment_location.jpg",
+        "Closest landmark": "娜迦营地",
+        "Game_link": "[&BOQNAAA=]",
+        "Notes": "Behind a rock on the northern side."
+    },
+    {
+        "Objective": "安全部机房",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/36/Illuminating_Skywatch_Archipelago_-_37_MinSec_Server_Room_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_37_MinSec_Server_Room_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/8/88/Illuminating_Skywatch_Archipelago_-_37_MinSec_Server_Room_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_37_MinSec_Server_Room_location.jpg",
+        "Closest landmark": "安全部机房",
+        "Game_link": "[&BDAOAAA=]",
+        "Notes": "Go to the southern side of the building."
+    },
+    {
+        "Objective": "征服广场",
+        "Map": "https://wiki.guildwars2.com//images/thumb/b/bd/Illuminating_Skywatch_Archipelago_-_38_Conquered_Plaza_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_38_Conquered_Plaza_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e4/Illuminating_Skywatch_Archipelago_-_38_Conquered_Plaza_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_38_Conquered_Plaza_location.jpg",
+        "Closest landmark": "征服广场",
+        "Game_link": "[&BDkOAAA=]",
+        "Notes": "One the right side behind a pipe when you enter the area from the  Kestrel's Vow Waypoint — [&BD8OAAA=]."
+    },
+    {
+        "Objective": "准者遗迹",
+        "Map": "https://wiki.guildwars2.com//images/thumb/9/9c/Illuminating_Skywatch_Archipelago_-_39_Exalted_Ruins_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_39_Exalted_Ruins_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/2/22/Illuminating_Skywatch_Archipelago_-_39_Exalted_Ruins_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_39_Exalted_Ruins_location.jpg",
+        "Closest landmark": "准者遗迹",
+        "Game_link": "[&BBIOAAA=]",
+        "Notes": "On top of Exalted ruins on a ledge southwest of the Point of Interest."
+    },
+    {
+        "Objective": "风暴之女坠毁点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/7/7f/Illuminating_Skywatch_Archipelago_-_40_Crash_of_the_Storm%27s_Daughter_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_40_Crash_of_the_Storm%27s_Daughter_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/96/Illuminating_Skywatch_Archipelago_-_40_Crash_of_the_Storm%27s_Daughter_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_40_Crash_of_the_Storm%27s_Daughter_location.jpg",
+        "Closest landmark": "风暴之女坠毁点",
+        "Game_link": "[&BAUOAAA=]",
+        "Notes": "Under some wreckage in the water."
+    },
+    {
+        "Objective": "云景湖",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/3d/Illuminating_Skywatch_Archipelago_-_41_Cloudview_Lake_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_41_Cloudview_Lake_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/2/27/Illuminating_Skywatch_Archipelago_-_41_Cloudview_Lake_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_41_Cloudview_Lake_location.jpg",
+        "Closest landmark": "云景湖",
+        "Game_link": "[&BPkNAAA=]",
+        "Notes": "At the bottom of the lake."
+    },
+    {
+        "Objective": "格林特神殿",
+        "Map": "https://wiki.guildwars2.com//images/thumb/9/9a/Illuminating_Skywatch_Archipelago_-_42_Temple_of_Glint_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_42_Temple_of_Glint_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/3/3d/Illuminating_Skywatch_Archipelago_-_42_Temple_of_Glint_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_42_Temple_of_Glint_location.jpg",
+        "Closest landmark": "格林特神殿",
+        "Game_link": "[&BAQOAAA=]",
+        "Notes": "On the southern side of the roof of the building."
+    },
+    {
+        "Objective": "隐秘瀑布",
+        "Map": "https://wiki.guildwars2.com//images/thumb/e/ed/Illuminating_Skywatch_Archipelago_-_43_Hidden_Falls_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_43_Hidden_Falls_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/c/cf/Illuminating_Skywatch_Archipelago_-_43_Hidden_Falls_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_43_Hidden_Falls_location.jpg",
+        "Closest landmark": "隐秘瀑布",
+        "Game_link": "[&BDUOAAA=]",
+        "Notes": "On the side of a building next to the waterfall."
+    },
+    {
+        "Objective": "族母巢穴",
+        "Map": "https://wiki.guildwars2.com//images/thumb/1/1a/Illuminating_Skywatch_Archipelago_-_44_Matriarch%27s_Nest_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_44_Matriarch%27s_Nest_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e9/Illuminating_Skywatch_Archipelago_-_44_Matriarch%27s_Nest_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_44_Matriarch%27s_Nest_location.jpg",
+        "Closest landmark": "族母巢穴",
+        "Game_link": "[&BM0NAAA=]",
+        "Notes": "On the mesa where the point of interest is."
+    },
+    {
+        "Objective": "莱尔的设计",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/64/Illuminating_Skywatch_Archipelago_-_45_Lyhr%27s_Design_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_45_Lyhr%27s_Design_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/ec/Illuminating_Skywatch_Archipelago_-_45_Lyhr%27s_Design_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_45_Lyhr%27s_Design_location.jpg",
+        "Closest landmark": "莱尔的设计",
+        "Game_link": "[&BO4NAAA=]",
+        "Notes": "Straight south of the point of interest on a balcony hanging over the cliff."
+    },
+    {
+        "Objective": "瓦思的怜悯",
+        "Map": "https://wiki.guildwars2.com//images/thumb/b/be/Illuminating_Skywatch_Archipelago_-_46_Vass%27s_Compassion_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_46_Vass%27s_Compassion_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/c/ce/Illuminating_Skywatch_Archipelago_-_46_Vass%27s_Compassion_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_46_Vass%27s_Compassion_location.jpg",
+        "Closest landmark": "瓦思的怜悯",
+        "Game_link": "[&BNINAAA=]",
+        "Notes": "Right before the entrance to the biggest tower on the middle floating island."
+    },
+    {
+        "Objective": "阿奇姆的牺牲",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/05/Illuminating_Skywatch_Archipelago_-_47_Akeem%27s_Sacrifice_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_47_Akeem%27s_Sacrifice_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/9a/Illuminating_Skywatch_Archipelago_-_47_Akeem%27s_Sacrifice_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_47_Akeem%27s_Sacrifice_location.jpg",
+        "Closest landmark": "阿奇姆的牺牲",
+        "Game_link": "[&BMINAAA=]",
+        "Notes": "On floating rocks south of the island."
+    },
+    {
+        "Objective": "碎裂通道",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f9/Illuminating_Skywatch_Archipelago_-_48_Fragmented_Passage_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_48_Fragmented_Passage_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/5/5c/Illuminating_Skywatch_Archipelago_-_48_Fragmented_Passage_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_48_Fragmented_Passage_location.jpg",
+        "Closest landmark": "碎裂通道",
+        "Game_link": "[&BPcNAAA=]",
+        "Notes": "Inside the cave, in the small alcove on the right."
+    },
+    {
+        "Objective": "德格达的洞察",
+        "Map": "https://wiki.guildwars2.com//images/thumb/8/8a/Illuminating_Skywatch_Archipelago_-_49_Dagda%27s_Perception_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_49_Dagda%27s_Perception_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/ed/Illuminating_Skywatch_Archipelago_-_49_Dagda%27s_Perception_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_49_Dagda%27s_Perception_location.jpg",
+        "Closest landmark": "德格达的洞察",
+        "Game_link": "[&BPsNAAA=]",
+        "Notes": "On the ring of the building, northern side."
+    },
+    {
+        "Objective": "研究实验室大门",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/3b/Illuminating_Skywatch_Archipelago_-_50_Gate_Research_Lab_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_50_Gate_Research_Lab_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/b/b8/Illuminating_Skywatch_Archipelago_-_50_Gate_Research_Lab_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_50_Gate_Research_Lab_location.jpg",
+        "Closest landmark": "研究实验室大门",
+        "Game_link": "[&BL0NAAA=]",
+        "Notes": "Go up the ramp next to the  Rata Novus Promenade Waypoint — [&BOANAAA=] and turn right.Alternatively, enter the portal in the  Western Research Facilities — [&BAgOAAA=]."
+    },
+    {
+        "Objective": "查克虫孵化场",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/04/Illuminating_Skywatch_Archipelago_-_51_Chak_Hatchery_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_51_Chak_Hatchery_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/f/f1/Illuminating_Skywatch_Archipelago_-_51_Chak_Hatchery_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_51_Chak_Hatchery_location.jpg",
+        "Closest landmark": "查克虫孵化场",
+        "Game_link": "[&BLYNAAA=]",
+        "Notes": "On top of the rocks with a tree northeast of the point of interest."
+    },
+    {
+        "Objective": "西部研究设施",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/0a/Illuminating_Skywatch_Archipelago_-_52_Western_Research_Facilities_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_52_Western_Research_Facilities_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/13/Illuminating_Skywatch_Archipelago_-_52_Western_Research_Facilities_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_52_Western_Research_Facilities_location.jpg",
+        "Closest landmark": "西部研究设施",
+        "Game_link": "[&BAgOAAA=]",
+        "Notes": "From the  Rata Novus Promenade Waypoint — [&BOANAAA=], head south and go up the ramp, then enter the room on the left, and go up the stairs on the left.Alternatively, enter the portal in the  Gate Research Lab — [&BL0NAAA=], then turn left after exiting the portal and go up the stairs."
+    },
+    {
+        "Objective": "跨界桥梁",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f6/Illuminating_Skywatch_Archipelago_-_53_Bridge_between_Worlds_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_53_Bridge_between_Worlds_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/72/Illuminating_Skywatch_Archipelago_-_53_Bridge_between_Worlds_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_53_Bridge_between_Worlds_location.jpg",
+        "Closest landmark": "跨界桥梁",
+        "Game_link": "[&BBgOAAA=]",
+        "Notes": "On a cliff facing Primal Maguuma. From the Rata Novus Promenade Waypoint, go north up the ramp. Follow the path west to get to the cliff."
+    },
+    {
+        "Objective": "光明水晶",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/07/Illuminating_Skywatch_Archipelago_-_54_The_Light_Crystal_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_54_The_Light_Crystal_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/2/2a/Illuminating_Skywatch_Archipelago_-_54_The_Light_Crystal_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_54_The_Light_Crystal_location.jpg",
+        "Closest landmark": "光明水晶",
+        "Game_link": "[&BBYOAAA=]",
+        "Notes": "West of the point of interest, on top of a rock formation by the wall."
+    },
+    {
+        "Objective": "破旧的废墟",
+        "Map": "https://wiki.guildwars2.com//images/thumb/c/ce/Illuminating_Skywatch_Archipelago_-_55_Derelict_Ruins_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_55_Derelict_Ruins_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/1e/Illuminating_Skywatch_Archipelago_-_55_Derelict_Ruins_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_55_Derelict_Ruins_location.jpg",
+        "Closest landmark": "破旧的废墟",
+        "Game_link": "[&BNwNAAA=]",
+        "Notes": "East of the the point of interest, right next to the Mastery Point."
+    },
+    {
+        "Objective": "玛邦的决心",
+        "Map": "https://wiki.guildwars2.com//images/thumb/2/20/Illuminating_Skywatch_Archipelago_-_56_Mabon%27s_Resolve_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_56_Mabon%27s_Resolve_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/6/6b/Illuminating_Skywatch_Archipelago_-_56_Mabon%27s_Resolve_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_56_Mabon%27s_Resolve_location.jpg",
+        "Closest landmark": "玛邦的决心",
+        "Game_link": "[&BMMNAAA=]",
+        "Notes": "Directly south of the point of interest."
+    },
+    {
+        "Objective": "巫师塔南门",
+        "Map": "https://wiki.guildwars2.com//images/thumb/1/18/Illuminating_Skywatch_Archipelago_-_57_Wizard%27s_Tower_South_Gate_map.jpg/150px-Illuminating_Skywatch_Archipelago_-_57_Wizard%27s_Tower_South_Gate_map.jpg",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e7/Illuminating_Skywatch_Archipelago_-_57_Wizard%27s_Tower_South_Gate_location.jpg/150px-Illuminating_Skywatch_Archipelago_-_57_Wizard%27s_Tower_South_Gate_location.jpg",
+        "Closest landmark": "巫师塔南门",
+        "Game_link": "[&BMQNAAA=]",
+        "Notes": "At the edge on the southern side of the island."
+    }
+]

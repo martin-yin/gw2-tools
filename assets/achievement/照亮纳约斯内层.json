@@ -1,0 +1,346 @@
+[
+    {
+        "Objective": "星界圣盾营地传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/4/43/Illuminating_Inner_Nayos_-_Map_for_Lantern_01_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_01_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e5/Illuminating_Inner_Nayos_-_Lantern_01_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_01_Location.png",
+        "Closest landmark": "星界圣盾营地传送点",
+        "Game_link": "[&BGYOAAA=]",
+        "Notes": "By the stairs southeast of Waypoint."
+    },
+    {
+        "Objective": "前线营地传送点",
+        "Map": "https://wiki.guildwars2.com//images/thumb/7/71/Illuminating_Inner_Nayos_-_Map_for_Lantern_02_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_02_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/18/Illuminating_Inner_Nayos_-_Lantern_02_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_02_Location.png",
+        "Closest landmark": "前线营地传送点",
+        "Game_link": "[&BHYOAAA=]",
+        "Notes": "Right next to the tent by the Waypoint."
+    },
+    {
+        "Objective": "海特之门",
+        "Map": "https://wiki.guildwars2.com//images/thumb/8/8e/Illuminating_Inner_Nayos_-_Map_for_Lantern_03_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_03_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/d/d1/Illuminating_Inner_Nayos_-_Lantern_03_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_03_Location.png",
+        "Closest landmark": "海特之门",
+        "Game_link": "[&BF4OAAA=]",
+        "Notes": "East of the gate."
+    },
+    {
+        "Objective": "海特血口",
+        "Map": "https://wiki.guildwars2.com//images/thumb/1/17/Illuminating_Inner_Nayos_-_Map_for_Lantern_04_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_04_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/5/5d/Illuminating_Inner_Nayos_-_Lantern_04_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_04_Location.png",
+        "Closest landmark": "海特血口",
+        "Game_link": "[&BFwOAAA=]",
+        "Notes": "Under the gate."
+    },
+    {
+        "Objective": "贪婪者之谷",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/66/Illuminating_Inner_Nayos_-_Map_for_Lantern_05_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_05_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/ef/Illuminating_Inner_Nayos_-_Lantern_05_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_05_Location.png",
+        "Closest landmark": "贪婪者之谷",
+        "Game_link": "[&BGMOAAA=]",
+        "Notes": "No description."
+    },
+    {
+        "Objective": "沸腾之围",
+        "Map": "https://wiki.guildwars2.com//images/thumb/7/74/Illuminating_Inner_Nayos_-_Map_for_Lantern_06_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_06_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/76/Illuminating_Inner_Nayos_-_Lantern_06_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_06_Location.png",
+        "Closest landmark": "沸腾之围",
+        "Game_link": "[&BFcOAAA=]",
+        "Notes": "Access through west ledge, down under the cliff or east through tunnel."
+    },
+    {
+        "Objective": "愠怒崖壁",
+        "Map": "https://wiki.guildwars2.com//images/thumb/d/d8/Illuminating_Inner_Nayos_-_Map_for_Lantern_07_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_07_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/3/31/Illuminating_Inner_Nayos_-_Lantern_07_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_07_Location.png",
+        "Closest landmark": "愠怒崖壁",
+        "Game_link": "[&BGIOAAA=]",
+        "Notes": "No description."
+    },
+    {
+        "Objective": "分水岭",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/32/Illuminating_Inner_Nayos_-_Map_for_Lantern_08_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_08_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/14/Illuminating_Inner_Nayos_-_Lantern_08_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_08_Location.png",
+        "Closest landmark": "分水岭",
+        "Game_link": "[&BGkOAAA=]",
+        "Notes": "Under tree next to west siege weapon during event."
+    },
+    {
+        "Objective": "恸哭深坑",
+        "Map": "https://wiki.guildwars2.com//images/thumb/b/b9/Illuminating_Inner_Nayos_-_Map_for_Lantern_09_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_09_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/4/45/Illuminating_Inner_Nayos_-_Lantern_09_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_09_Location.png",
+        "Closest landmark": "恸哭深坑",
+        "Game_link": "[&BF0OAAA=]",
+        "Notes": "On bridge's main \"root\"."
+    },
+    {
+        "Objective": "悔恨之水",
+        "Map": "https://wiki.guildwars2.com//images/thumb/d/d3/Illuminating_Inner_Nayos_-_Lantern_10_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_10_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/6/63/Illuminating_Inner_Nayos_-_Map_for_Lantern_10_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_10_Location.png",
+        "Closest landmark": "悔恨之水",
+        "Game_link": "[&BG0OAAA=]",
+        "Notes": "On rock by waterfall"
+    },
+    {
+        "Objective": "星界圣盾营地",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/66/Illuminating_Inner_Nayos_-_Map_for_Lantern_11_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_11_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/0/0e/Illuminating_Inner_Nayos_-_Lantern_11_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_11_Location.png",
+        "Closest landmark": "星界圣盾营地",
+        "Game_link": "[&BGYOAAA=]",
+        "Notes": "In camp next to Gunnald (Merchant) between kayak boats."
+    },
+    {
+        "Objective": "永夜之湖",
+        "Map": "https://wiki.guildwars2.com//images/thumb/7/74/Illuminating_Inner_Nayos_-_Map_for_Lantern_12_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_12_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/7f/Illuminating_Inner_Nayos_-_Lantern_12_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_12_Location.png",
+        "Closest landmark": "永夜之湖",
+        "Game_link": "[&BFgOAAA=]",
+        "Notes": "On rock north of southern beacon northwest of body of water and west of  Mere of Everlasting Night — [&BFgOAAA=]."
+    },
+    {
+        "Objective": "莫辛之柱",
+        "Map": "https://wiki.guildwars2.com//images/thumb/c/c7/Illuminating_Inner_Nayos_-_Map_for_Lantern_13_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_13_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/2/23/Illuminating_Inner_Nayos_-_Lantern_13_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_13_Location.png",
+        "Closest landmark": "莫辛之柱",
+        "Game_link": "[&BGQOAAA=]",
+        "Notes": "Follow tiled path northeast of Waypoint next to pillar."
+    },
+    {
+        "Objective": "多面树",
+        "Map": "https://wiki.guildwars2.com//images/thumb/5/52/Illuminating_Inner_Nayos_-_Map_for_Lantern_14_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_14_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/3/3a/Illuminating_Inner_Nayos_-_Lantern_14_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_14_Location.png",
+        "Closest landmark": "多面树",
+        "Game_link": "[&BFsOAAA=]",
+        "Notes": "Right under the mastery insight."
+    },
+    {
+        "Objective": "天王之巢",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/65/Illuminating_Inner_Nayos_-_Map_for_Lantern_15_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_15_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/5/5c/Illuminating_Inner_Nayos_-_Lantern_15_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_15_Location.png",
+        "Closest landmark": "天王之巢",
+        "Game_link": "[&BGwOAAA=]",
+        "Notes": "Above  The Pool of Whispers — [&BG4OAAA=] cascade."
+    },
+    {
+        "Objective": "晋升之梦",
+        "Map": "https://wiki.guildwars2.com//images/thumb/1/1b/Illuminating_Inner_Nayos_-_Map_for_Lantern_16_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_16_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/8/84/Illuminating_Inner_Nayos_-_Lantern_16_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_16_Location.png",
+        "Closest landmark": "晋升之梦",
+        "Game_link": "[&BGgOAAA=]",
+        "Notes": "South of  The Ascending Dream — [&BGgOAAA=] above stairs"
+    },
+    {
+        "Objective": "低语之池",
+        "Map": "https://wiki.guildwars2.com//images/thumb/a/af/Illuminating_Inner_Nayos_-_Map_for_Lantern_17_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_17_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/ea/Illuminating_Inner_Nayos_-_Lantern_17_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_17_Location.png",
+        "Closest landmark": "低语之池",
+        "Game_link": "[&BG4OAAA=]",
+        "Notes": "North of basin from  The Pool of Whispers — [&BG4OAAA=]"
+    },
+    {
+        "Objective": "悼念之树",
+        "Map": "https://wiki.guildwars2.com//images/thumb/a/a3/Illuminating_Inner_Nayos_-_Map_for_Lantern_18_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_18_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/92/Illuminating_Inner_Nayos_-_Lantern_18_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_18_Location.png",
+        "Closest landmark": "悼念之树",
+        "Game_link": "[&BFkOAAA=]",
+        "Notes": "Head North from  Tree of Mourning — [&BFkOAAA=]"
+    },
+    {
+        "Objective": "北部提取器",
+        "Map": "https://wiki.guildwars2.com//images/thumb/5/57/Illuminating_Inner_Nayos_-_Map_for_Lantern_19_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_19_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/ea/Illuminating_Inner_Nayos_-_Lantern_19_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_19_Location.png",
+        "Closest landmark": "北部提取器",
+        "Game_link": "[&BGsOAAA=]",
+        "Notes": "Right under extractor."
+    },
+    {
+        "Objective": "腐烂之地",
+        "Map": "https://wiki.guildwars2.com//images/thumb/2/2a/Illuminating_Inner_Nayos_-_Map_for_Lantern_20_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_20_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/e4/Illuminating_Inner_Nayos_-_Lantern_20_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_20_Location.png",
+        "Closest landmark": "腐烂之地",
+        "Game_link": "[&BFoOAAA=]",
+        "Notes": "North of basin."
+    },
+    {
+        "Objective": "南部提取器",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/03/Illuminating_Inner_Nayos_-_Map_for_Lantern_21_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_21_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/a/a5/Illuminating_Inner_Nayos_-_Lantern_21_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_21_Location.png",
+        "Closest landmark": "南部提取器",
+        "Game_link": "[&BGoOAAA=]",
+        "Notes": "On a rock, North of extractor."
+    },
+    {
+        "Objective": "失落祭坛",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f8/Illuminating_Inner_Nayos_-_Map_for_Lantern_22_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_22_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/b/b2/Illuminating_Inner_Nayos_-_Lantern_22_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_22_Location.png",
+        "Closest landmark": "失落祭坛",
+        "Game_link": "[&BGcOAAA=]",
+        "Notes": "In front of  Lost Altar — [&BGcOAAA=]'s closed gate, to the right facing it. No need to complete escort to access the Illuminating Lantern."
+    },
+    {
+        "Objective": "次级提取器",
+        "Map": "https://wiki.guildwars2.com//images/thumb/4/48/Illuminating_Inner_Nayos_-_Map_for_Lantern_23_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_23_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/72/Illuminating_Inner_Nayos_-_Lantern_23_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_23_Location.png",
+        "Closest landmark": "次级提取器",
+        "Game_link": "[&BH8OAAA=]",
+        "Notes": "Stairs next to central extrator tower."
+    },
+    {
+        "Objective": "薄雾边境",
+        "Map": "https://wiki.guildwars2.com//images/thumb/c/ca/Illuminating_Inner_Nayos_-_Map_for_Lantern_24_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_24_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/77/Illuminating_Inner_Nayos_-_Lantern_24_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_24_Location.png",
+        "Closest landmark": "薄雾边境",
+        "Game_link": "[&BIEOAAA=]",
+        "Notes": "In the waterfall."
+    },
+    {
+        "Objective": "瘟疫石柱",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/0b/Illuminating_Inner_Nayos_-_Map_for_Lantern_25_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_25_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/d/d9/Illuminating_Inner_Nayos_-_Lantern_25_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_25_Location.png",
+        "Closest landmark": "瘟疫石柱",
+        "Game_link": "[&BHcOAAA=]",
+        "Notes": "On vein next to rock north of  The Blighted Pillar — [&BHcOAAA=]."
+    },
+    {
+        "Objective": "查里布达神殿",
+        "Map": "https://wiki.guildwars2.com//images/thumb/8/80/Illuminating_Inner_Nayos_-_Map_for_Lantern_26_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_26_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/a/a0/Illuminating_Inner_Nayos_-_Lantern_26_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_26_Location.png",
+        "Closest landmark": "查里布达神殿",
+        "Game_link": "[&BHAOAAA=]",
+        "Notes": "Above gate's right pillar. You do not need to complete the event to access it."
+    },
+    {
+        "Objective": "初梦之湖",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/69/Illuminating_Inner_Nayos_-_Map_for_Lantern_27_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_27_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/7/79/Illuminating_Inner_Nayos_-_Lantern_27_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_27_Location.png",
+        "Closest landmark": "初梦之湖",
+        "Game_link": "[&BHIOAAA=]",
+        "Notes": "On rock above water."
+    },
+    {
+        "Objective": "痛苦之井",
+        "Map": "https://wiki.guildwars2.com//images/thumb/8/8d/Illuminating_Inner_Nayos_-_Map_for_Lantern_28_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_28_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/d/da/Illuminating_Inner_Nayos_-_Lantern_28_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_28_Location.png",
+        "Closest landmark": "痛苦之井",
+        "Game_link": "[&BIMOAAA=]",
+        "Notes": "In front of old house up top."
+    },
+    {
+        "Objective": "莫辛之眠",
+        "Map": "https://wiki.guildwars2.com//images/thumb/8/8e/Illuminating_Inner_Nayos_-_Map_for_Lantern_29_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_29_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/c/ce/Illuminating_Inner_Nayos_-_Lantern_29_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_29_Location.png",
+        "Closest landmark": "莫辛之眠",
+        "Game_link": "[&BHMOAAA=]",
+        "Notes": "By the tree next to the memory."
+    },
+    {
+        "Objective": "忘梦池",
+        "Map": "https://wiki.guildwars2.com//images/thumb/7/7a/Illuminating_Inner_Nayos_-_Map_for_Lantern_30_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_30_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/1a/Illuminating_Inner_Nayos_-_Lantern_30_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_30_Location.png",
+        "Closest landmark": "忘梦池",
+        "Game_link": "[&BIcOAAA=]",
+        "Notes": "On the rock ledge by the water."
+    },
+    {
+        "Objective": "初生氪族林地",
+        "Map": "https://wiki.guildwars2.com//images/thumb/0/05/Illuminating_Inner_Nayos_-_Map_for_Lantern_31_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_31_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/d/d7/Illuminating_Inner_Nayos_-_Lantern_31_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_31_Location.png",
+        "Closest landmark": "初生氪族林地",
+        "Game_link": "[&BIUOAAA=]",
+        "Notes": "Next to camp under a tree, behind big a pink plant pot."
+    },
+    {
+        "Objective": "叹息之桥",
+        "Map": "https://wiki.guildwars2.com//images/thumb/2/2f/Illuminating_Inner_Nayos_-_Map_for_Lantern_32_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_32_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/d/da/Illuminating_Inner_Nayos_-_Lantern_32_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_32_Location.png",
+        "Closest landmark": "叹息之桥",
+        "Game_link": "[&BG8OAAA=]",
+        "Notes": "Next to a big red plant pot, on the edge."
+    },
+    {
+        "Objective": "女王的仪仗队",
+        "Map": "https://wiki.guildwars2.com//images/thumb/9/92/Illuminating_Inner_Nayos_-_Map_for_Lantern_33_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_33_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/90/Illuminating_Inner_Nayos_-_Lantern_33_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_33_Location.png",
+        "Closest landmark": "女王的仪仗队",
+        "Game_link": "[&BHQOAAA=]",
+        "Notes": "Exit the  Coliseum of the Midnight King — [&BIQOAAA=] Eastbound and turn left at the two blood orbs, it's inside the ruin."
+    },
+    {
+        "Objective": "阵亡英雄拱道",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f3/Illuminating_Inner_Nayos_-_Map_for_Lantern_34_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_34_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/e/ed/Illuminating_Inner_Nayos_-_Lantern_34_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_34_Location.png",
+        "Closest landmark": "阵亡英雄拱道",
+        "Game_link": "[&BHsOAAA=]",
+        "Notes": "On rock next to the arches."
+    },
+    {
+        "Objective": "地洞",
+        "Map": "https://wiki.guildwars2.com//images/thumb/d/da/Illuminating_Inner_Nayos_-_Map_for_Lantern_35_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_35_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/b/bd/Illuminating_Inner_Nayos_-_Lantern_35_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_35_Location.png",
+        "Closest landmark": "地洞",
+        "Game_link": "[&BHkOAAA=]",
+        "Notes": "Northeast of  The Burrows — [&BHkOAAA=], next to stairs"
+    },
+    {
+        "Objective": "午夜国王大剧场",
+        "Map": "https://wiki.guildwars2.com//images/thumb/3/3f/Illuminating_Inner_Nayos_-_Map_for_Lantern_36_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_36_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/16/Illuminating_Inner_Nayos_-_Lantern_36_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_36_Location.png",
+        "Closest landmark": "午夜国王大剧场",
+        "Game_link": "[&BIQOAAA=]",
+        "Notes": "On cliff's edge at the end of the coliseum.\n    Note: Numbering is made to match API."
+    },
+    {
+        "Objective": "水源地",
+        "Map": "https://wiki.guildwars2.com//images/thumb/b/bb/Illuminating_Inner_Nayos_-_Map_for_Lantern_37_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_37_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/5/55/Illuminating_Inner_Nayos_-_Lantern_37_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_37_Location.png",
+        "Closest landmark": "水源地",
+        "Game_link": "[&BIIOAAA=]",
+        "Notes": "West of  The Gathering Grounds — [&BIIOAAA=] by the pillar.\n    Note: Numbering is made to match API."
+    },
+    {
+        "Objective": "开国要塞",
+        "Map": "https://wiki.guildwars2.com//images/thumb/6/69/Illuminating_Inner_Nayos_-_Map_for_Lantern_38_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_38_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/9/93/Illuminating_Inner_Nayos_-_Lantern_38_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_38_Location.png",
+        "Closest landmark": "开国要塞",
+        "Game_link": "[&BH0OAAA=]",
+        "Notes": "Next to circular pink platforms, on the edge.\n    Note: Numbering is made to match API."
+    },
+    {
+        "Objective": "偏远草地",
+        "Map": "https://wiki.guildwars2.com//images/thumb/d/da/Illuminating_Inner_Nayos_-_Map_for_Lantern_39_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_39_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/1/16/Illuminating_Inner_Nayos_-_Lantern_39_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_39_Location.png",
+        "Closest landmark": "偏远草地",
+        "Game_link": "[&BHUOAAA=]",
+        "Notes": "West of  Isolated Grasslands — [&BHUOAAA=] by the big rock.\n    Note: Numbering is made to match API."
+    },
+    {
+        "Objective": "隐秘河湾",
+        "Map": "https://wiki.guildwars2.com//images/thumb/f/f5/Illuminating_Inner_Nayos_-_Map_for_Lantern_40_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_40_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/8/82/Illuminating_Inner_Nayos_-_Lantern_40_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_40_Location.png",
+        "Closest landmark": "隐秘河湾",
+        "Game_link": "[&BHgOAAA=]",
+        "Notes": "Follow the waterfalls upstream, on the shore.\n    Note: Numbering is made to match API."
+    },
+    {
+        "Objective": "幽居池塘",
+        "Map": "https://wiki.guildwars2.com//images/thumb/8/81/Illuminating_Inner_Nayos_-_Map_for_Lantern_41_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_41_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/6/6a/Illuminating_Inner_Nayos_-_Lantern_41_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_41_Location.png",
+        "Closest landmark": "幽居池塘",
+        "Game_link": "[&BIkOAAA=]",
+        "Notes": "On ground northeast of water.\n    Note: Numbering is made to match API."
+    },
+    {
+        "Objective": "哀悼庭院",
+        "Map": "https://wiki.guildwars2.com//images/thumb/b/bf/Illuminating_Inner_Nayos_-_Map_for_Lantern_42_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_42_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/2/29/Illuminating_Inner_Nayos_-_Lantern_42_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_42_Location.png",
+        "Closest landmark": "哀悼庭院",
+        "Game_link": "[&BIAOAAA=]",
+        "Notes": "Go down the road south from the camp, can't miss it.\n    Note: Numbering is made to match API."
+    },
+    {
+        "Objective": "远古之路",
+        "Map": "https://wiki.guildwars2.com//images/thumb/e/e2/Illuminating_Inner_Nayos_-_Map_for_Lantern_43_Location.png/150px-Illuminating_Inner_Nayos_-_Map_for_Lantern_43_Location.png",
+        "Location": "https://wiki.guildwars2.com//images/thumb/c/c0/Illuminating_Inner_Nayos_-_Lantern_43_Location.png/150px-Illuminating_Inner_Nayos_-_Lantern_43_Location.png",
+        "Closest landmark": "远古之路",
+        "Game_link": "[&BHwOAAA=]",
+        "Notes": "Down from camp follow path until stairs, inside\n    Note: Numbering is made to match API."
+    }
+]

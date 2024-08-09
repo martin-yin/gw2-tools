@@ -1,0 +1,64 @@
+
+import datetime
+import json
+import os
+import cv2
+import time
+import numpy as np
+# from cnocr import CnOcr
+
+# 图片二值化
+def binarization(gray_img):
+    binary = cv2.adaptiveThreshold(gray_img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
+    return binary   
+
+# 匹配模板
+def match_template(image, template):
+    result = cv2.matchTemplate(image, template, cv2.TM_CCOEFF_NORMED)
+    return result
+
+# 绘制覆盖
+def draw_covered(image, locs, width, height, threshold=0.5):
+    threshold = 0.8
+    loc = np.where(locs >= threshold)
+    for pt in zip(*loc[::-1]):
+        cv2.rectangle(image, pt, (pt[0] + width, pt[1] + height), (0, 0, 255), -1)
+        
+    return image
+
+def find_max_mactch_result(match_result, threshold=0.5):
+    (min_val, max_val, min_loc, max_loc) = cv2.minMaxLoc(match_result)
+    print("max_val:", max_val)
+    if max_val > threshold:
+        (x, y) = max_loc
+        return (x, y, max_val)
+    
+    return None
+
+# if __name__ == '__main__':
+#     doneHook = cv2.imread('./assets/doneHook.png', cv2.IMREAD_GRAYSCALE)
+#     ocr = CnOcr()  
+    
+#     img_list = []
+
+#     not_done_list = [] 
+
+#     for file in os.listdir('./detection-images'):
+#         file_path = os.path.join('./detection-images', file)
+#         if os.path.isfile(file_path) and file.endswith('.png'):
+#             img = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
+#             binary = binarization(img)
+#             result = match_template(binary, doneHook)
+#             drawed_image = draw_covered(binary, result, img.shape[0], doneHook.shape[1], 100)
+#             ocr_detection_result = ocr.ocr(drawed_image)
+#             for item in ocr_detection_result:
+#                 not_done_list.append(item['text'])
+
+#     with open('./achievement-datas/照亮纳约斯内层.json', 'r', encoding='utf-8') as f:
+#         data = json.load(f)
+#         for item in data:
+#             if item['Objective'] in not_done_list:
+#                 print("\n")
+#                 print("未完成的：", item['Objective'])
+#                 print("观察点:", item['Game_link'])
+

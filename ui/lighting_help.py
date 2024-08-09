@@ -1,0 +1,138 @@
+from PySide6.QtCore import Qt, Signal
+from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem
+from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ScrollArea, ToolButton, TableWidget
+
+class LightingHelpInterface(ScrollArea):
+    def __init__(self, parent=None):
+        super().__init__(parent=parent)
+        self.setObjectName("LightingHelpInterface")
+        self.view = QWidget(self)
+        self.vBoxLayout = QVBoxLayout(self.view)
+        self.floadWidget = FloadWidget(self.view)
+        self.floadWidget.detection_signal.connect(self.on_detection_signal)
+
+        self.detectionListWidget = DetectionListWidget(self.view)
+
+        self.vBoxLayout.addWidget(self.floadWidget)
+        self.vBoxLayout.addWidget(self.detectionListWidget)
+        self.enableTransparentBackground()
+
+    def on_detection_signal(self, fload, achievement):
+        print("detection", fload, achievement)
+        if fload is not "" and achievement is not "":
+            print("调用检测")
+
+    def detection_list_update(self, detection_list):
+        self.detectionListWidget.update_table(detection_list)
+
+class FloadWidget(QWidget):
+
+    detection_signal = Signal(str, str)
+
+    def __init__(self, parent=None):
+        super().__init__(parent=parent)
+        self.setObjectName("FloadWidget")
+
+        self.achievementComboBoxValue = "照亮阿姆尼塔斯"
+        self.vBoxLayout = QVBoxLayout(self)
+
+        # 图片目录部分
+        self.floadLabel = BodyLabel("目录：", self)
+        self.floadLabel.setFixedWidth(60)
+        self.floadButton = ToolButton(FluentIcon.FOLDER, self)
+        self.floadLineEdit = LineEdit(self) 
+        self.floadLineEdit.setFixedWidth(400)
+        self.floadLineEdit.setPlaceholderText("请选择图片目录")
+        self.floadButton.clicked.connect(self.floadButtonClicked)
+
+        # 图片目录的水平布局
+        self.floadHBoxLayout = QHBoxLayout()
+        self.floadHBoxLayout.addWidget(self.floadLabel)
+        self.floadHBoxLayout.addWidget(self.floadLineEdit)
+        self.floadHBoxLayout.addWidget(self.floadButton)
+        self.floadHBoxLayout.addStretch(1)
+
+        # 成就列表部分
+        self.achievementComboBox = ComboBox()
+        items = ['照亮阿姆尼塔斯', '照亮纳约斯内层', '照亮天空哨站群岛']
+        self.achievementComboBox.addItems(items)
+        self.achievementLabel = BodyLabel("成就：", self)
+        self.achievementLabel.setFixedWidth(60)
+        self.achievementComboBox.currentIndexChanged.connect(self.achievementComboBoxChanged)
+
+        # 成就的水平布局
+        self.achievementHBoxLayout = QHBoxLayout()
+        self.achievementHBoxLayout.addWidget(self.achievementLabel)
+        self.achievementHBoxLayout.addWidget(self.achievementComboBox)
+        self.achievementHBoxLayout.addStretch(1)    
+        # 设置边距
+        self.achievementHBoxLayout.setContentsMargins(0, 4, 0, 4)
+        # 照亮按钮部分
+        self.detectionButton = PushButton("检测", self)
+
+        self.detectionButton.clicked.connect(self.emit_detection_signal)  # 连接点击信号
+        self.detectionButton.setFixedWidth(80)
+
+        # 检测按钮的水平布局
+        self.detectionHBoxLayout = QHBoxLayout()
+        self.detectionHBoxLayout.addWidget(self.detectionButton)
+        self.detectionHBoxLayout.addStretch(1)
+
+        # 将所有子布局添加到主布局
+        self.vBoxLayout.addLayout(self.floadHBoxLayout)
+        self.vBoxLayout.addLayout(self.achievementHBoxLayout)
+        self.vBoxLayout.addLayout(self.detectionHBoxLayout)
+
+        self.setLayout(self.vBoxLayout)  # 设置主布局
+
+    def floadButtonClicked(self):
+        # qt 打开文件选择框
+        qFileDialog = QFileDialog()
+        qFileDialog.setFileMode(QFileDialog.Directory)
+        qFileDialog.setOption(QFileDialog.ShowDirsOnly, True)
+        if qFileDialog.exec():
+            fileNames = qFileDialog.selectedFiles()
+            self.floadLineEdit.setText(fileNames[0])
+
+    def achievementComboBoxChanged(self, comboBox):
+        self.achievementComboBoxValue = self.achievementComboBox.currentText()
+        print(self.achievementComboBoxValue)
+    
+    def emit_detection_signal(self):
+        self.detection_signal.emit(self.floadLineEdit.text(), self.achievementComboBoxValue)  # 发出信号
+
+class DetectionListWidget(QWidget):
+    def __init__(self, parent=None):
+        super().__init__(parent=parent)
+        self.setObjectName("DetectionListWidget")
+        self.vBoxLayout = QVBoxLayout(self)
+
+        self.detectionListLabel = BodyLabel("以下成就未完成：", self)
+        self.detectionListLabel.hide()
+        self.detectionListLabel.setAlignment(Qt.AlignmentFlag.AlignLeft)
+
+        self.table = TableWidget(self)
+        self.table.setColumnCount(4)
+        self.table.horizontalHeader().setVisible(False)
+        self.table.verticalHeader().setVisible(False)
+
+        self.vBoxLayout.addWidget(self.detectionListLabel)
+        self.vBoxLayout.addWidget(self.table)
+        self.setLayout(self.vBoxLayout)
+
+    def update_table(self, detection_list):
+        self.detectionListLabel.show()
+        self.table.setRowCount(len(detection_list))
+        
+        for i, detection in enumerate(detection_list):
+            for j in range(3):
+                self.table.setItem(i, j, QTableWidgetItem(detection[j]))
+            copy_button = PushButton("复制", self)
+            copy_button.clicked.connect(lambda checked, row=i: self.copy_item(row))
+            self.table.setCellWidget(i, 3, copy_button)
+
+    def copy_item(self, row):
+        print(row)
+
+
+    
