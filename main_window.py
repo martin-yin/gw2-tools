@@ -42,16 +42,13 @@ class Window(MSFluentWindow):
         self.navigationInterface.setCurrentItem(self.homeInterface.objectName())
     
     def initWindow(self):
-        self.resize(800, 600)
+        self.resize(720, 520)
         self.setWindowIcon(QIcon('./assets/logo.png'))
         self.setWindowTitle('激战2-工具箱')
 
         desktop = QApplication.screens()[0].availableGeometry()
         w, h = desktop.width(), desktop.height()
         self.move(w//2 - self.width()//2, h//2 - self.height()//2)
-
-    def showMessageBox(self):
-        print('哥们你不需要帮助！')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

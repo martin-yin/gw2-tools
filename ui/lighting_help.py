@@ -1,47 +1,54 @@
 import os
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem, QHeaderView
+import time
+from PySide6.QtCore import Qt, Signal, QThread
+from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem, QHeaderView, QSizePolicy, QSizePolicy, QTableWidget, QApplication
 from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ScrollArea, ToolButton, TableWidget, InfoBar, InfoBarPosition
 
 from detection import detect_achievement_list, detect_image_by_path
+from task.detection_thread import DetectionLightingThread
 from utils.utils import open_file
 
+light_comboBox_list = ['照亮天空哨站群岛', '照亮阿姆尼塔斯', '照亮纳约斯内层']
 class LightingHelpInterface(QFrame):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.setObjectName("LightingHelpInterface")
-        self.view = QWidget(self)
-        self.vBoxLayout = QVBoxLayout(self.view)
+        self.vBoxLayout = QVBoxLayout(self)
         self.floadWidget = FloadWidget()
         self.floadWidget.detection_signal.connect(self.on_detection_signal)
-        self.detectionListWidget = DetectionListWidget()
-        self.detectionListWidget.setFixedWidth(600)
+        self.detectionTableWidget = DetectionTableWidget()
         self.vBoxLayout.addWidget(self.floadWidget)
-        self.vBoxLayout.addWidget(self.detectionListWidget)
+        self.vBoxLayout.addWidget(self.detectionTableWidget)
+        self.vBoxLayout.setStretch(0, 0)  
+        self.vBoxLayout.setStretch(1, 1)
 
     def on_detection_signal(self, fload, achievement):
         if fload != "" and achievement != "":
-
-            current_path = os.getcwd()
-            achievement_list_path = os.path.join(current_path, "assets", "achievements", f"{achievement}.json")
-            achievement_list = open_file(achievement_list_path)
-            img_list = detect_image_by_path(fload)
-            ocr_achievement_list = detect_achievement_list(img_list)
+            InfoBar.success(
+                title='检测完成后下方会展示未完成的成就',
+                content="",
+                orient=Qt.Horizontal,
+                isClosable=True,
+                position=InfoBarPosition.TOP_RIGHT,
+                duration=2000,
+                parent=self
+            )
             not_done_list = []
-            # 遍历 achievement_list
-            for achievement_item in achievement_list:
-                objective = achievement_item.get('Objective')
-                if objective in ocr_achievement_list:
-                    not_done_list.append(achievement_item)
             self.detection_list_update(not_done_list)
 
+            self.detection_thread = DetectionLightingThread(fload, achievement)
+            self.detection_thread.detectionFinished.connect(self.detection_list_update)
+            self.detection_thread.finished.connect(self.setButtonEnabled)
+            self.detection_thread.start()
+
+    def setButtonEnabled(self):
+        self.floadWidget.detectionButton.setEnabled(True)
+
     def detection_list_update(self, detection_list):
-        self.detectionListWidget.update_table(detection_list)
+        self.detectionTableWidget.update_table(detection_list)
 
 class FloadWidget(QWidget):
-
     detection_signal = Signal(str, str)
-
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.setObjectName("FloadWidget")
@@ -67,8 +74,7 @@ class FloadWidget(QWidget):
 
         # 成就列表部分
         self.achievementComboBox = ComboBox()
-        items = ['照亮阿姆尼塔斯', '照亮纳约斯内层', '照亮天空哨站群岛']
-        self.achievementComboBox.addItems(items)
+        self.achievementComboBox.addItems(light_comboBox_list)
         self.achievementLabel = BodyLabel("成就：", self)
         self.achievementLabel.setFixedWidth(60)
         self.achievementComboBox.currentIndexChanged.connect(self.achievementComboBoxChanged)
@@ -79,7 +85,7 @@ class FloadWidget(QWidget):
         self.achievementHBoxLayout.addWidget(self.achievementComboBox)
         self.achievementHBoxLayout.addStretch(1)    
         # 设置边距
-        self.achievementHBoxLayout.setContentsMargins(0, 4, 0, 4)
+        self.achievementHBoxLayout.setContentsMargins(0, 4, 0, 0)
         # 照亮按钮部分
         self.detectionButton = PushButton("检测", self)
 
@@ -112,9 +118,11 @@ class FloadWidget(QWidget):
         print(self.achievementComboBoxValue)
     
     def emit_detection_signal(self):
+        self.detectionButton.setEnabled(False)
         self.detection_signal.emit(self.floadLineEdit.text(), self.achievementComboBoxValue)  # 发出信号
 
-class DetectionListWidget(QWidget):
+
+class DetectionTableWidget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.setObjectName("DetectionListWidget")
@@ -126,17 +134,25 @@ class DetectionListWidget(QWidget):
 
         self.table = TableWidget(self)
         self.table.setColumnCount(3)
-        self.table.setColumnWidth(0, 340)
-        self.table.setColumnWidth(1, 120)
+        self.table.setColumnWidth(0, 260)
+        self.table.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
         self.table.setColumnWidth(2, 100)
+
         self.table.horizontalHeader().setVisible(False)
         self.table.verticalHeader().setVisible(False)
-
+        self.table.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.vBoxLayout.addWidget(self.detectionListLabel)
         self.vBoxLayout.addWidget(self.table)
         self.setLayout(self.vBoxLayout)
 
     def update_table(self, detection_list):
+        self.detection_list = detection_list
+
+        print(detection_list)
+        if len(detection_list) == 0:
+            self.detectionListLabel.hide()
+            return
+
         self.detectionListLabel.show()
         self.table.setRowCount(len(detection_list))
         
@@ -152,7 +168,7 @@ class DetectionListWidget(QWidget):
             self.table.setCellWidget(i, 2, copy_button)
 
     def copy_item(self, row):
-        print(row)
-
-
-    
+        if 0 <= row < len(self.detection_list):
+            item = self.detection_list[row]
+            clipboard = QApplication.clipboard()
+            clipboard.setText(item.get('Game_link', ''))
