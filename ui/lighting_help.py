@@ -1,26 +1,39 @@
+import os
 from PySide6.QtCore import Qt, Signal
-from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem
-from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ScrollArea, ToolButton, TableWidget
+from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem, QHeaderView
+from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ScrollArea, ToolButton, TableWidget, InfoBar, InfoBarPosition
 
-class LightingHelpInterface(ScrollArea):
+from detection import detect_achievement_list, detect_image_by_path
+from utils.utils import open_file
+
+class LightingHelpInterface(QFrame):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.setObjectName("LightingHelpInterface")
         self.view = QWidget(self)
         self.vBoxLayout = QVBoxLayout(self.view)
-        self.floadWidget = FloadWidget(self.view)
+        self.floadWidget = FloadWidget()
         self.floadWidget.detection_signal.connect(self.on_detection_signal)
-
-        self.detectionListWidget = DetectionListWidget(self.view)
-
+        self.detectionListWidget = DetectionListWidget()
+        self.detectionListWidget.setFixedWidth(600)
         self.vBoxLayout.addWidget(self.floadWidget)
         self.vBoxLayout.addWidget(self.detectionListWidget)
-        self.enableTransparentBackground()
 
     def on_detection_signal(self, fload, achievement):
-        print("detection", fload, achievement)
-        if fload is not "" and achievement is not "":
-            print("调用检测")
+        if fload != "" and achievement != "":
+
+            current_path = os.getcwd()
+            achievement_list_path = os.path.join(current_path, "assets", "achievements", f"{achievement}.json")
+            achievement_list = open_file(achievement_list_path)
+            img_list = detect_image_by_path(fload)
+            ocr_achievement_list = detect_achievement_list(img_list)
+            not_done_list = []
+            # 遍历 achievement_list
+            for achievement_item in achievement_list:
+                objective = achievement_item.get('Objective')
+                if objective in ocr_achievement_list:
+                    not_done_list.append(achievement_item)
+            self.detection_list_update(not_done_list)
 
     def detection_list_update(self, detection_list):
         self.detectionListWidget.update_table(detection_list)
@@ -112,7 +125,10 @@ class DetectionListWidget(QWidget):
         self.detectionListLabel.setAlignment(Qt.AlignmentFlag.AlignLeft)
 
         self.table = TableWidget(self)
-        self.table.setColumnCount(4)
+        self.table.setColumnCount(3)
+        self.table.setColumnWidth(0, 340)
+        self.table.setColumnWidth(1, 120)
+        self.table.setColumnWidth(2, 100)
         self.table.horizontalHeader().setVisible(False)
         self.table.verticalHeader().setVisible(False)
 
@@ -124,12 +140,16 @@ class DetectionListWidget(QWidget):
         self.detectionListLabel.show()
         self.table.setRowCount(len(detection_list))
         
-        for i, detection in enumerate(detection_list):
-            for j in range(3):
-                self.table.setItem(i, j, QTableWidgetItem(detection[j]))
+        for i, item in enumerate(detection_list):
+            objective = item.get('Objective', '')
+            game_link = item.get('Game_link', '')
+            self.table.setItem(i, 0, QTableWidgetItem(objective))
+            self.table.setItem(i, 1, QTableWidgetItem(game_link))
             copy_button = PushButton("复制", self)
+            copy_button.setFixedWidth(60)
+            copy_button.setFixedHeight(30)
             copy_button.clicked.connect(lambda checked, row=i: self.copy_item(row))
-            self.table.setCellWidget(i, 3, copy_button)
+            self.table.setCellWidget(i, 2, copy_button)
 
     def copy_item(self, row):
         print(row)

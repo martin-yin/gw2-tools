@@ -5,7 +5,7 @@ import os
 import cv2
 import time
 import numpy as np
-# from cnocr import CnOcr
+from cnocr import CnOcr
 
 # 图片二值化
 def binarization(gray_img):
@@ -35,6 +35,50 @@ def find_max_mactch_result(match_result, threshold=0.5):
     
     return None
 
+
+
+def detect_achievement(img_path):
+    doneHook = cv2.imread('./assets/achievements/done-hook.png', cv2.IMREAD_GRAYSCALE)
+    ocr = CnOcr()  
+    img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+    binary = binarization(img)
+    result = match_template(binary, doneHook)
+    drawed_image = draw_covered(binary, result, img.shape[0], doneHook.shape[1], 100)
+    ocr_detection_result = ocr.ocr(drawed_image)
+    for item in ocr_detection_result:
+        print(item['text'])
+
+def detect_achievement_list(img_list):    
+    doneHook = cv2.imread('./assets/achievements/done-hook.png', cv2.IMREAD_GRAYSCALE)
+    ocr = CnOcr()  
+    not_done_list = []
+    for img_path in img_list:
+        img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+        binary = binarization(img)
+        result = match_template(binary, doneHook)
+        drawed_image = draw_covered(binary, result, img.shape[0], doneHook.shape[1], 100)
+        ocr_detection_result = ocr.ocr(drawed_image)
+        for item in ocr_detection_result:
+            not_done_list.append(item['text'])
+
+    return not_done_list
+
+def detect_image_by_path(path): 
+    image_list = []
+    for file in os.listdir(path):
+        file_path = os.path.join(path, file)
+        if os.path.isfile(file_path) and (file.endswith('.png') or file.endswith('.jpg') or file.endswith('.jpeg')):
+            image_list.append(file_path)
+    
+    return image_list
+
+
+if __name__ == '__main__':
+    list =  detect_image_by_path('C:/Users/martin-yin/Desktop/gw2-tools/detection-images')
+    result = detect_achievement_list(list)
+    print(result)
+
+# detect_achievement('./detection-images/照亮纳约斯内层.png')   
 # if __name__ == '__main__':
 #     doneHook = cv2.imread('./assets/doneHook.png', cv2.IMREAD_GRAYSCALE)
 #     ocr = CnOcr()  

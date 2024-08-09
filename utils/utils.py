@@ -1,4 +1,5 @@
 import ctypes
+import json
 from win32 import win32api, win32gui
 import dxcam
 
@@ -48,3 +49,8 @@ def get_windows_scale():
     except Exception as e:
         exit("获取 windows dpi 失败")
         return None
+# 打开文件
+def open_file(file_path):
+    normalized_path = file_path.replace("\\", "/")
+    with open(normalized_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
