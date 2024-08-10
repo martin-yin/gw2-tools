@@ -1,18 +1,17 @@
 
 import os
-import cv2
+from cv2 import matchTemplate, minMaxLoc, rectangle, imread, IMREAD_GRAYSCALE, TM_CCOEFF_NORMED
 import numpy as np
-
 from utils.utils import get_cnOcr
 
 # 图片二值化
-def binarization(gray_img):
-    binary = cv2.adaptiveThreshold(gray_img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
-    return binary   
+# def binarization(gray_img):
+#     binary = cv2.adaptiveThreshold(gray_img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
+#     return binary   
 
 # 匹配模板
 def match_template(img, template):
-    result = cv2.matchTemplate(img, template, cv2.TM_CCOEFF_NORMED)
+    result = matchTemplate(img, template, TM_CCOEFF_NORMED)
     return result
 
 # 绘制覆盖
@@ -20,12 +19,12 @@ def draw_covered(img, locs, width, height, threshold=0.5):
     threshold = 0.8
     loc = np.where(locs >= threshold)
     for pt in zip(*loc[::-1]):
-        cv2.rectangle(img, pt, (pt[0] + width, pt[1] + height), (0, 0, 255), -1)
+        rectangle(img, pt, (pt[0] + width, pt[1] + height), (0, 0, 255), -1)
         
     return img
 
 def find_max_mactch_result(match_result, threshold=0.5):
-    (min_val, max_val, min_loc, max_loc) = cv2.minMaxLoc(match_result)
+    (min_val, max_val, min_loc, max_loc) = minMaxLoc(match_result)
     print("max_val:", max_val)
     if max_val > threshold:
         (x, y) = max_loc
@@ -34,11 +33,11 @@ def find_max_mactch_result(match_result, threshold=0.5):
     return None
 
 def detect_achievement_list(img_list):    
-    done_hook = cv2.imread('./assets/achievements/done-hook.png', cv2.IMREAD_GRAYSCALE)
+    done_hook = imread('./assets/achievements/done-hook.png', IMREAD_GRAYSCALE)
     ocr = get_cnOcr()
     detect_list = []
     for img_path in img_list:
-        img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+        img = imread(img_path, IMREAD_GRAYSCALE)
         result = match_template(img, done_hook)
         drawed_image = draw_covered(img, result, img.shape[0], done_hook.shape[1], 100)
         ocr_detection_result = ocr.ocr(drawed_image)

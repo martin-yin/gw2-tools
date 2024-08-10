@@ -2,7 +2,6 @@ from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem, QHeaderView, QSizePolicy, QSizePolicy, QApplication
 from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ToolButton, TableWidget, InfoBar, InfoBarPosition
 from task.detection_thread import DetectionLightingThread
-from utils.utils import open_file
 
 light_comboBox_list = ['照亮天空哨站群岛', '照亮阿姆尼塔斯', '照亮纳约斯内层']
 class LightingHelpInterface(QFrame):

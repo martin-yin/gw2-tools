@@ -1,10 +1,7 @@
 import sys
-
-from PySide6.QtCore import Qt
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication
-from qfluentwidgets import (NavigationItemPosition, MSFluentWindow, setTheme, Theme)
-from qfluentwidgets import FluentIcon as FIF
+from qfluentwidgets import (NavigationItemPosition, MSFluentWindow, setTheme, Theme, FluentIcon as FIF)
 from ui.home import HomeInterface
 from ui.lighting_help import LightingHelpInterface
 from ui.setting import SeetingInterface
