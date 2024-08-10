@@ -1,8 +1,4 @@
-from qfluentwidgets import (setFont, SubtitleLabel)
-from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QFrame, QVBoxLayout
-from qfluentwidgets import FluentIcon as FIF, PushSettingCard
-
+from PySide6.QtWidgets import QFrame
 
 class SeetingInterface(QFrame):
     def __init__(self, parent=None):

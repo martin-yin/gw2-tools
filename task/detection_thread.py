@@ -1,9 +1,6 @@
 
 import os
-import time
-from PySide6.QtCore import Qt, Signal, QThread
-from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem, QHeaderView, QSizePolicy, QSizePolicy, QTableWidget, QApplication
-from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ScrollArea, ToolButton, TableWidget, InfoBar, InfoBarPosition
+from PySide6.QtCore import Signal, QThread
 
 from detection import detect_achievement_list, detect_image_by_path
 from utils.utils import open_file

@@ -1,13 +1,8 @@
-import keyboard
-from qfluentwidgets import (setFont, SubtitleLabel)
+
 from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QVBoxLayout, QHBoxLayout, QWidget, QFrame
-from qfluentwidgets import FluentIcon, PushSettingCard, ExpandGroupSettingCard, ScrollArea, BodyLabel, ComboBox, SwitchButton, ImageLabel, InfoBar, InfoBarPosition
-
-from fast_operate import right_operate_destroy
+from PySide6.QtWidgets import QVBoxLayout, QHBoxLayout, QWidget
+from qfluentwidgets import FluentIcon, ExpandGroupSettingCard, ScrollArea, BodyLabel, ComboBox, SwitchButton, ImageLabel
 from task.hotkey_thread import HotkeyThread
-from utils.utils import get_hwnd
-
 
 class HomeInterface(ScrollArea):
     def __init__(self, parent=None):

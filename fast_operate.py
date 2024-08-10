@@ -1,6 +1,4 @@
 import time
-import cv2
-import keyboard
 import numpy as np
 import pyautogui
 from utils.utils import get_cnOcr, get_frame, get_frame_position

@@ -1,6 +1,6 @@
 import ctypes
 import json
-from win32 import win32api, win32gui, win32print
+from win32 import win32gui, win32print
 import dxcam
 import win32con
 camera = None

@@ -1,4 +1,3 @@
-import ctypes
 import win32con
 from win32 import win32api, win32gui
 
