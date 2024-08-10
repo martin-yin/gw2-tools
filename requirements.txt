@@ -5,3 +5,4 @@ pywin32==306
 opencv-python==4.10.0.84
 cnocr==2.3.0.3
 PyAutoGUI==0.9.54
+keyboard==0.13.5
