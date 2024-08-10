@@ -1,6 +1,7 @@
 import json
 from win32 import win32gui, win32print
 import dxcam
+from cnocr import CnOcr
 
 DESKTOPHORZRES = 118
 DESKTOPVERTRES = 117
@@ -12,7 +13,6 @@ cnOcr = None
 def get_cnOcr():
     global cnOcr
     if cnOcr is None:
-        from cnocr import CnOcr
         cnOcr = CnOcr()
     return cnOcr
 
