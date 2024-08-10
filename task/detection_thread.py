@@ -1,7 +1,6 @@
 
 import os
 from PySide6.QtCore import Signal, QThread
-
 from detection import detect_achievement_list, detect_image_by_path
 from utils.utils import open_file
 

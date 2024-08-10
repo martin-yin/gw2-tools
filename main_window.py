@@ -1,4 +1,5 @@
 import sys
+from cnocr import CnOcr
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication
 from qfluentwidgets import (NavigationItemPosition, MSFluentWindow, setTheme, Theme, FluentIcon as FIF)

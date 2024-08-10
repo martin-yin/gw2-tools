@@ -17,7 +17,8 @@ def match_template(img, template):
 # 绘制覆盖
 def draw_covered(img, locs, width, height, threshold=0.5):
     threshold = 0.8
-    loc = numpy.np.where(locs >= threshold)
+
+    loc = numpy.where(locs >= threshold)
     for pt in zip(*loc[::-1]):
        cv2.rectangle(img, pt, (pt[0] + width, pt[1] + height), (0, 0, 255), -1)
         
