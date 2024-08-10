@@ -7,6 +7,8 @@ import time
 import numpy as np
 from cnocr import CnOcr
 
+from utils.utils import get_cnOcr
+
 # 图片二值化
 def binarization(gray_img):
     binary = cv2.adaptiveThreshold(gray_img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
@@ -37,7 +39,7 @@ def find_max_mactch_result(match_result, threshold=0.5):
 
 def detect_achievement_list(img_list):    
     done_hook = cv2.imread('./assets/achievements/done-hook.png', cv2.IMREAD_GRAYSCALE)
-    ocr = CnOcr()  
+    ocr = get_cnOcr()
     detect_list = []
     for img_path in img_list:
         img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
@@ -59,10 +61,10 @@ def detect_image_by_path(path):
     return image_list
 
 
-if __name__ == '__main__':
-    list =  detect_image_by_path('C:/Users/martin-yin/Desktop/gw2-tools/detection-images')
-    result = detect_achievement_list(list)
-    print(result)
+# if __name__ == '__main__':
+#     list =  detect_image_by_path('C:/Users/martin-yin/Desktop/gw2-tools/detection-images')
+#     result = detect_achievement_list(list)
+#     print(result)
 
 # detect_achievement('./detection-images/照亮纳约斯内层.png')   
 # if __name__ == '__main__':

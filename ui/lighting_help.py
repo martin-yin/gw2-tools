@@ -53,7 +53,7 @@ class FloadWidget(QWidget):
         super().__init__(parent=parent)
         self.setObjectName("FloadWidget")
 
-        self.achievementComboBoxValue = "照亮阿姆尼塔斯"
+        self.achievementComboBoxValue = light_comboBox_list[0]
         self.vBoxLayout = QVBoxLayout(self)
 
         # 图片目录部分

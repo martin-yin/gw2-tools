@@ -1,10 +1,19 @@
 import ctypes
 import json
-from win32 import win32api, win32gui
+from win32 import win32api, win32gui, win32print
 import dxcam
-
+import win32con
 camera = None
 hwnd = None
+
+cnOcr = None
+
+def get_cnOcr():
+    global cnOcr
+    if cnOcr is None:
+        from cnocr import CnOcr
+        cnOcr = CnOcr()
+    return cnOcr
 
 # 获取激战2的窗口句柄
 def get_hwnd():
@@ -15,6 +24,22 @@ def get_hwnd():
     if hwnd == 0:
         return None
     return hwnd
+
+def get_real_screen_resolution():
+    hDC = win32gui.GetDC(0)
+    width = win32print.GetDeviceCaps(hDC, win32con.DESKTOPHORZRES)
+    height = win32print.GetDeviceCaps(hDC, win32con.DESKTOPVERTRES)
+    return  width, height
+
+def get_frame_position(letf, top, right, bottom):
+    max_width, max_height = get_real_screen_resolution()
+
+    if right > max_width:
+        right = max_width
+    if bottom > max_height:
+        bottom = max_height
+    
+    return (letf, top, right, bottom)
 
 # 获取截图
 def get_frame(region):
