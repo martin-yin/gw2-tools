@@ -1,7 +1,6 @@
 import json
 from win32 import win32gui, win32print
 import dxcam
-from cnocr import CnOcr
 
 DESKTOPHORZRES = 118
 DESKTOPVERTRES = 117
@@ -13,7 +12,7 @@ cnOcr = None
 def get_cnOcr():
     global cnOcr
     if cnOcr is None:
-        cnOcr = CnOcr()
+        cnOcr = None
     return cnOcr
 
 # 获取激战2的窗口句柄

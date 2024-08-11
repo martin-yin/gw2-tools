@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+dist
+build
+*.spec
+gw2-tools-build-env/

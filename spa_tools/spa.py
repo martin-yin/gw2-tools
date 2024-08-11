@@ -1,4 +1,3 @@
-import requests
 from bs4 import BeautifulSoup
 
 # 读取本地HTML文件
