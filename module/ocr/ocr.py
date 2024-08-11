@@ -2,16 +2,21 @@ import io
 import os
 from PIL import Image
 from module.ocr.PPOCR_api import GetOcrApi
+from utils.utils import root_path
 
 class OCR:
-   def __init__(self, exePath):
-      self.exePath = exePath
-      self.ocr = None   
+   def __init__(self, exePath = ""):
+      if exePath == "":
+         self.exePath = os.path.join(root_path(), "PaddleOCR-json", "PaddleOCR-json.exe")
+      else:
+         self.exePath = exePath
+      self.ocr = None
 
    def instance_ocr(self):
       if self.ocr is None:
          try:
-            self.ocr = GetOcrApi(self.exePath)
+            argument = {'config_path': "models/config_chinese.txt"}
+            self.ocr = GetOcrApi(exePath=self.exePath, argument=argument)
          except Exception as e:
             print(e)
       

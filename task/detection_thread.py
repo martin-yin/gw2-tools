@@ -5,7 +5,7 @@ from cv2 import IMREAD_GRAYSCALE, imread
 # from detection.detection import detect_achievement_list, detect_image_by_path
 from module.ocr.ocr import OCR
 from utils.image_processing import draw_covered, get_images_by_path, match_template
-from utils.utils import open_file
+from utils.utils import open_file, root_path
 
 class DetectionLightingThread(QThread):
     detectionFinished = Signal(list)
@@ -13,7 +13,6 @@ class DetectionLightingThread(QThread):
     def __init__(self, fload, achievement_list):
         super().__init__()
         self.fload = fload
-        self.current_path = os.getcwd()
         self.achievement_list = achievement_list
 
     def process_img_list(self):
@@ -30,10 +29,9 @@ class DetectionLightingThread(QThread):
     def run(self):
         not_done_list = []
         try:
-            ocr_path = os.path.join(self.current_path, "PaddleOCR-json/PaddleOCR-json.exe")
-            ocr = OCR(ocr_path)
-            achievement_path = os.path.join(self.current_path, "assets", "achievements", f"{self.achievement_list}.json")
-            # 成就数据
+            ocr = OCR()
+            achievement_path = os.path.join(root_path(), "assets", "achievements", f"{self.achievement_list}.json")
+            print(achievement_path)
             achievement_data = open_file(achievement_path)
             img_list = self.process_img_list()
             ocr_result = ocr.run_list(img_list)

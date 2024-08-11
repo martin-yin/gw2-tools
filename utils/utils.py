@@ -1,4 +1,5 @@
 import json
+import os
 from win32 import win32gui, win32print
 import dxcam
 
@@ -7,13 +8,6 @@ DESKTOPVERTRES = 117
 
 camera = None
 hwnd = None
-cnOcr = None
-
-def get_cnOcr():
-    global cnOcr
-    if cnOcr is None:
-        cnOcr = None
-    return cnOcr
 
 # 获取激战2的窗口句柄
 def get_hwnd():
@@ -54,3 +48,8 @@ def open_file(file_path):
     normalized_path = file_path.replace("\\", "/")
     with open(normalized_path, 'r', encoding='utf-8') as f:
         return json.load(f)
+    
+def root_path():
+    current_path = os.path.dirname(os.path.abspath(__file__))
+    root_path = os.path.dirname(current_path)
+    return root_path
