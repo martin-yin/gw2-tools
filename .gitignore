@@ -8,3 +8,4 @@ dist
 build
 *.spec
 gw2-tools-build-env/
+PaddleOCR-json/

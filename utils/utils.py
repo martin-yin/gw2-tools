@@ -49,8 +49,8 @@ def get_frame(region):
         
     return camera.grab(region)
     
-# 打开文件
 def open_file(file_path):
+    """ 打开文件夹 """
     normalized_path = file_path.replace("\\", "/")
     with open(normalized_path, 'r', encoding='utf-8') as f:
         return json.load(f)
