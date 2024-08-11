@@ -2,7 +2,6 @@
 import os
 from PySide6.QtCore import Signal, QThread
 from cv2 import IMREAD_GRAYSCALE, imread
-# from detection.detection import detect_achievement_list, detect_image_by_path
 from module.ocr.ocr import OCR
 from utils.image_processing import draw_covered, get_images_by_path, match_template
 from utils.utils import open_file, root_path
@@ -18,7 +17,8 @@ class DetectionLightingThread(QThread):
     def process_img_list(self):
         """ 处理后的图片 """
         img_list = []
-        done_hook = imread('./assets/achievements/done-hook.png', IMREAD_GRAYSCALE)
+        done_hook_path = os.path.join(root_path(), "assets", "achievements", "done-hook.png")
+        done_hook = imread(done_hook_path, IMREAD_GRAYSCALE)
         for img_path in get_images_by_path(self.fload):
             img = imread(img_path, IMREAD_GRAYSCALE)
             match_result = match_template(img, done_hook)
@@ -31,7 +31,6 @@ class DetectionLightingThread(QThread):
         try:
             ocr = OCR()
             achievement_path = os.path.join(root_path(), "assets", "achievements", f"{self.achievement_list}.json")
-            print(achievement_path)
             achievement_data = open_file(achievement_path)
             img_list = self.process_img_list()
             ocr_result = ocr.run_list(img_list)

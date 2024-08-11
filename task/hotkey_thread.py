@@ -2,7 +2,6 @@ import os
 from time import sleep
 from PySide6.QtCore import QThread, Signal
 import keyboard
-from numpy import mean
 import pyautogui
 
 from module.ocr.ocr import OCR
