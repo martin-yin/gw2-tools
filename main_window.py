@@ -1,3 +1,4 @@
+import os
 import sys
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication
@@ -5,6 +6,7 @@ from qfluentwidgets import (NavigationItemPosition, MSFluentWindow, setTheme, Th
 from ui.home import HomeInterface
 from ui.lighting_help import LightingHelpInterface
 from ui.setting import SeetingInterface
+from utils.utils import root_path
 
 class Window(MSFluentWindow):
     def __init__(self):
@@ -27,9 +29,8 @@ class Window(MSFluentWindow):
     
     def initWindow(self):
         self.resize(720, 520)
-        self.setWindowIcon(QIcon('./assets/logo.png'))
+        self.setWindowIcon(QIcon(os.path.join(root_path(), "assets", "logo.ico")))
         self.setWindowTitle('激战2-工具箱')
-
         desktop = QApplication.screens()[0].availableGeometry()
         w, h = desktop.width(), desktop.height()
         self.move(w//2 - self.width()//2, h//2 - self.height()//2)

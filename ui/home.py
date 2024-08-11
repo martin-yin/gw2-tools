@@ -1,8 +1,10 @@
 
+import os
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QVBoxLayout, QHBoxLayout, QWidget
 from qfluentwidgets import FluentIcon, ExpandGroupSettingCard, ScrollArea, BodyLabel, ComboBox, SwitchButton, ImageLabel
 from task.hotkey_thread import HotkeyThread
+from utils.utils import root_path
 
 class HomeInterface(ScrollArea):
     def __init__(self, parent=None):
@@ -10,7 +12,7 @@ class HomeInterface(ScrollArea):
         self.view = QWidget(self)
 
         self.vBoxLayout = QVBoxLayout(self.view)
-        image = ImageLabel("./assets/logo.png")
+        image = ImageLabel(os.path.join(root_path(), "assets", "logo.png"))
         image.scaledToHeight(100)
         self.setWidget(self.view)
         self.setWidgetResizable(True)

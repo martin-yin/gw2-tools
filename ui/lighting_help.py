@@ -19,7 +19,7 @@ class LightingHelpInterface(QFrame):
 
     def on_detection_signal(self, fload, achievement):
         if fload != "" and achievement != "":
-            InfoBar.success(
+            InfoBar.info(
                 title='检测完成后下方会展示未完成的成就',
                 content="",
                 orient=Qt.Horizontal,
@@ -83,7 +83,6 @@ class FloadWidget(QWidget):
         self.achievementHBoxLayout.setContentsMargins(0, 4, 0, 0)
         # 照亮按钮部分
         self.detectionButton = PushButton("检测", self)
-
         self.detectionButton.clicked.connect(self.emit_detection_signal)  # 连接点击信号
         self.detectionButton.setFixedWidth(80)
 
@@ -108,12 +107,26 @@ class FloadWidget(QWidget):
             fileNames = qFileDialog.selectedFiles()
             self.floadLineEdit.setText(fileNames[0])
 
-    def achievementComboBoxChanged(self, comboBox):
+    def achievementComboBoxChanged(self):
         self.achievementComboBoxValue = self.achievementComboBox.currentText()
     
     def emit_detection_signal(self):
+        fload = self.floadLineEdit.text()
+        achievement = self.achievementComboBoxValue
+        if fload == "":
+            InfoBar.error(
+                title='请选择图片目录',
+                content="",
+                orient=Qt.Horizontal,
+                isClosable=True,
+                position=InfoBarPosition.TOP_RIGHT,
+                duration=2000,
+                parent=self
+            )
+            return
+        
         self.detectionButton.setEnabled(False)
-        self.detection_signal.emit(self.floadLineEdit.text(), self.achievementComboBoxValue)  # 发出信号
+        self.detection_signal.emit(fload, achievement)  # 发出信号
 
 
 class DetectionTableWidget(QWidget):
