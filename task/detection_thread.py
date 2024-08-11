@@ -1,6 +1,7 @@
 
 import os
 from PySide6.QtCore import Signal, QThread
+import cv2
 from cv2 import IMREAD_GRAYSCALE, imread
 from module.ocr.ocr import OCR
 from utils.image_processing import draw_covered, get_images_by_path, match_template
@@ -22,7 +23,7 @@ class DetectionLightingThread(QThread):
         for img_path in get_images_by_path(self.fload):
             img = imread(img_path, IMREAD_GRAYSCALE)
             match_result = match_template(img, done_hook)
-            drawed_image = draw_covered(img, match_result, img.shape[0], done_hook.shape[1], 100)
+            drawed_image = draw_covered(img, match_result, img.shape[0], done_hook.shape[1])
             img_list.append(drawed_image)   
         return img_list
 
@@ -38,10 +39,10 @@ class DetectionLightingThread(QThread):
             for ocr_item in ocr_result:
                 ocr_text = ocr_item[1][0]
                 ocr_text_list.append(ocr_text)
-            
+                print(f"OCR Result: {ocr_text}")
+                
             for achievement_item in achievement_data:
                 objective = achievement_item.get("Objective")
-                print(objective)
                 if objective in ocr_text_list:
                     not_done_list.append(achievement_item)
             self.detectionFinished.emit(not_done_list)
