@@ -1,3 +1,4 @@
+import ctypes
 import json
 import os
 from win32 import win32gui, win32print
@@ -19,11 +20,25 @@ def get_hwnd():
         return None
     return hwnd
 
+def get_hwnw_rect():
+    hwnd = get_hwnd()
+    if hwnd is None:
+        return None
+    return win32gui.GetWindowRect(hwnd)
+
 def get_real_screen_resolution():
     hDC = win32gui.GetDC(0)
     width = win32print.GetDeviceCaps(hDC, DESKTOPHORZRES)
     height = win32print.GetDeviceCaps(hDC, DESKTOPVERTRES)
-    return  width, height
+    return width, height
+
+
+def activate_window(): 
+    hwnd = get_hwnd()
+    if hwnd is None:
+        return False
+    win32gui.SetForegroundWindow(hwnd)
+    return True
 
 def get_frame_position(letf, top, right, bottom):
     max_width, max_height = get_real_screen_resolution()
@@ -53,3 +68,14 @@ def root_path():
     current_path = os.path.dirname(os.path.abspath(__file__))
     root_path = os.path.dirname(current_path)
     return root_path
+
+def get_windows_scale():
+    try:
+        user32 = ctypes.windll.user32
+        user32.SetProcessDPIAware()
+        scaling_factor = user32.GetDpiForSystem()
+        # 计算缩放比例
+        return scaling_factor / 96.0
+ 
+    except Exception as e:
+        exit("获取 windows dpi 失败")

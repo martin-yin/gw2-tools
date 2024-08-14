@@ -1,0 +1,19 @@
+{
+    "achievements": [
+        {
+            "name": "\u7167\u4eae\u7eb3\u7ea6\u65af\u5185\u5c42",
+            "template": "/assets/achievements/secrets_of_the_obscure/illuminating_inner_nayos.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/\u7167\u4eae\u7eb3\u7ea6\u65af\u5185\u5c42.json"
+        },
+        {
+            "name": "\u7167\u4eae\u5929\u7a7a\u54e8\u7ad9\u7fa4\u5c9b",
+            "template": "/assets/achievements/secrets_of_the_obscure/illuminating_inner_nayos.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/\u7167\u4eae\u5929\u7a7a\u54e8\u7ad9\u7fa4\u5c9b.json"
+        },
+        {
+            "name": "\u7167\u4eae\u963f\u59c6\u5c3c\u5854\u65af",
+            "template": "/assets/achievements/secrets_of_the_obscure/illuminating_inner_nayos.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/\u7167\u4eae\u963f\u59c6\u5c3c\u5854\u65af.json"
+        }
+    ]
+}
