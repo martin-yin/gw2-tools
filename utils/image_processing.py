@@ -34,8 +34,8 @@ def get_images_by_path(path):
     
     return image_list
 
-#  获取图片最佳的缩放比
 def match_template_with_scaling(img, template, scaling_step=0.1, min_scale=1.0, max_scale=2.0):
+    """ 获取模板匹配结果，并进行缩放 """
     best_score = float("-inf")
     best_scale = 1
     best_matching_scale = None
