@@ -22,7 +22,7 @@ class LightingHelpInterface(QFrame):
     def on_detection_signal(self, fload, achievement):
      
         not_done_list = []
-        self.detection_list_update({'data': not_done_list, "msg": '检测完成后下方会展示未完成的成就', "type": 'info'})
+        self.detection_list_update({'data': not_done_list, "msg": '', "type": 'info'})
 
         self.detection_thread = DetectionLightingThread(fload, achievement)
         self.detection_thread.detectionFinished.connect(self.detection_list_update)
@@ -34,17 +34,7 @@ class LightingHelpInterface(QFrame):
 
     def detection_list_update(self, result):
         self.activateWindow()
-        if result['type'] == 'info':
-            InfoBar.info(
-                title=result['msg'],
-                content="",
-                orient=Qt.Horizontal,
-                isClosable=True,
-                position=InfoBarPosition.TOP_RIGHT,
-                duration=3000,
-                parent=self
-            )
-
+     
         if result['type'] == 'error':
             InfoBar.error(
                 title=result['msg'],
@@ -83,7 +73,7 @@ class FloadWidget(QWidget):
         self.floadButton = ToolButton(FluentIcon.FOLDER, self)
         self.floadLineEdit = LineEdit(self) 
         self.floadLineEdit.setFixedWidth(400)
-        self.floadLineEdit.setPlaceholderText("不选择目录则会通过脚本打开游戏抓取")
+        self.floadLineEdit.setPlaceholderText("不选择目录则会通过脚本打开游戏抓取，需要管理员运行哦~")
         self.floadButton.clicked.connect(self.floadButtonClicked)
 
         # 图片目录的水平布局

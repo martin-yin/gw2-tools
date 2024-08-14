@@ -2,7 +2,7 @@
 import os
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QVBoxLayout, QHBoxLayout, QWidget
-from qfluentwidgets import FluentIcon, ExpandGroupSettingCard, ScrollArea, BodyLabel, ComboBox, SwitchButton, ImageLabel
+from qfluentwidgets import FluentIcon, ExpandGroupSettingCard, ScrollArea, BodyLabel, ComboBox, SwitchButton, ImageLabel, PushSettingCard
 from task.hotkey_thread import HotkeyThread
 from utils.utils import root_path
 
@@ -18,9 +18,18 @@ class HomeInterface(ScrollArea):
         self.setWidgetResizable(True)
         self.setObjectName("HomeInterface")
         self.vBoxLayout.setContentsMargins(20, 20, 20, 20) 
+
+        self.runButton = PushSettingCard(
+            text="启动",
+            icon=FluentIcon.GAME,
+            title="激战2",
+            content="怕就别用, 用就别怕！装饰用的按钮…………"
+        )
+
         self.vBoxLayout.addWidget(image, alignment=Qt.AlignmentFlag.AlignCenter)
         self.vBoxLayout.addSpacing(10) 
-        self.vBoxLayout.addWidget(FastOperationCard())
+        self.vBoxLayout.addWidget(self.runButton)
+        # self.vBoxLayout.addWidget(FastOperationCard())
         self.vBoxLayout.addStretch(1)
         self.enableTransparentBackground()
 
