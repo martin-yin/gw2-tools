@@ -20,17 +20,9 @@ class LightingHelpInterface(QFrame):
         self.vBoxLayout.setStretch(1, 1)
 
     def on_detection_signal(self, fload, achievement):
-        InfoBar.info(
-            title='检测完成后下方会展示未完成的成就',
-            content="",
-            orient=Qt.Horizontal,
-            isClosable=True,
-            position=InfoBarPosition.TOP_RIGHT,
-            duration=2000,
-            parent=self
-        )
+     
         not_done_list = []
-        self.detection_list_update(not_done_list)
+        self.detection_list_update({'data': not_done_list, "msg": '检测完成后下方会展示未完成的成就', "type": 'info'})
 
         self.detection_thread = DetectionLightingThread(fload, achievement)
         self.detection_thread.detectionFinished.connect(self.detection_list_update)
@@ -42,8 +34,39 @@ class LightingHelpInterface(QFrame):
 
     def detection_list_update(self, result):
         self.activateWindow()
-        # self.detectionTableWidget.update_table(detection_list)
-        print(result)
+        if result['type'] == 'info':
+            InfoBar.info(
+                title=result['msg'],
+                content="",
+                orient=Qt.Horizontal,
+                isClosable=True,
+                position=InfoBarPosition.TOP_RIGHT,
+                duration=3000,
+                parent=self
+            )
+
+        if result['type'] == 'error':
+            InfoBar.error(
+                title=result['msg'],
+                content="",
+                orient=Qt.Horizontal,
+                isClosable=True,
+                position=InfoBarPosition.TOP_RIGHT,
+                duration=3000,
+                parent=self
+            )
+
+        if result['type'] == 'success':
+            InfoBar.success(
+                title=result['msg'],
+                content="",
+                orient=Qt.Horizontal,
+                isClosable=True,
+                position=InfoBarPosition.TOP_RIGHT,
+                duration=3000,
+                parent=self
+            )
+        self.detectionTableWidget.update_table(result['data'])
 
 class FloadWidget(QWidget):
     detection_signal = Signal(str, object)
@@ -148,7 +171,10 @@ class DetectionTableWidget(QWidget):
 
         if len(detection_list) == 0:
             self.detectionListLabel.hide()
-            self.table.clear()
+            self.table.setRowCount(0)
+            self.table.clear()  
+            self.table.blockSignals(False)
+            self.table.clearSpans()
             return
 
         self.detectionListLabel.setText(f"检测到 {len(detection_list)} 个未完成的成就")

@@ -4,7 +4,7 @@ from cv2 import COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, TM_CCOEFF_NORMED
 import pyautogui
 from win32 import win32gui
 import dxcam
-from utils.utils import get_real_screen_resolution, get_windows_scale, join_path
+from utils.utils import get_windows_scale, join_path
 
 class Gw2:
     def __init__(self):
@@ -40,7 +40,7 @@ class Gw2:
             bottom = max_height
         return (letf, top, right, bottom)
 
-    def get_frame(self, position=None):
+    def get_frame(self, position):
         """ 获取指定位置的截图 """
         if self.hwnd is None:
             return None
@@ -54,7 +54,7 @@ class Gw2:
         window_scale = get_windows_scale()
         template = imread(join_path(achievement), IMREAD_GRAYSCALE)
         scaled_template = resize(template, None, fx=window_scale, fy=window_scale, interpolation=INTER_LINEAR)
-        initial_frame = self.get_frame()
+        initial_frame = self.get_frame(self.get_hwnd_rect())
         gray_frame = cvtColor(initial_frame, COLOR_BGR2GRAY)
         res = matchTemplate(gray_frame, scaled_template, TM_CCOEFF_NORMED)
         _, score, _, top_left = minMaxLoc(res)
@@ -70,8 +70,7 @@ class Gw2:
                 rect[1] + top_left[1] + base_offset_height
             )
             return roi_coords
-        
-        raise ValueError(f'没有找到对应的成就！')
+        return None
 
     def scroll(self, frequency = 5,  type = -1):
         """ 滚动窗口 """

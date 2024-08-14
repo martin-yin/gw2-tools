@@ -10,7 +10,7 @@ from utils.image_processing import draw_covered, get_images_by_path, match_templ
 from utils.utils import join_path, open_file, root_path
 
 class DetectionLightingThread(QThread):
-    detectionFinished = Signal(list)
+    detectionFinished = Signal(object)
 
     def __init__(self, fload ,achievement):
         super().__init__()
@@ -44,44 +44,53 @@ class DetectionLightingThread(QThread):
 
     def run(self):
         """ 运行检测 """
-        try:
-            not_done_list = []
-            if self.fload != "":
-                img_list = get_images_by_path(self.fload)
-                if len(img_list) == 0:
-                    self.detectionFinished.emit({
-                        "msg": "当前路径下没有找到 png jpg jepg 格式的图片",
-                        "data": [],
-                    })
-                    return
-            else:
-                frame_postion = self.gw2_instance.get_achievement_frame_position(self.achievement["template"])
-                if frame_postion is not None:
-                    img_list = self.scroll_screenshot(frame_postion)
-
-                ocr = OCR()
-                achievement_data = open_file(join_path(self.achievement['data_path']))
-                # 获取成就数据
-                processed_img_list = self.process_img_list(img_list)
-                print(len(processed_img_list))
-                ocr_result = ocr.run_list(processed_img_list)
-                ocr_text_list = []
-                for ocr_item in ocr_result:
-                    ocr_text = ocr_item[1][0]
-                    ocr_text_list.append(ocr_text)
-                    
-                for achievement_item in achievement_data:
-                    objective = achievement_item.get("Objective")
-                    if objective in ocr_text_list:
-                        not_done_list.append(achievement_item)
-
+        not_done_list = []
+        img_list = []
+        if self.fload != "":
+            img_list = get_images_by_path(self.fload)
+            if len(img_list) == 0:
                 self.detectionFinished.emit({
-                    "msg":"识别成功",
-                    "data": not_done_list,
+                    "msg": "当前路径下没有找到 png jpg jepg 格式的图片",
+                    "data": [],
+                    "type": "error",
                 })
+                return
+        else:
+            frame_postion = self.gw2_instance.get_achievement_frame_position(self.achievement["template"])
+            if frame_postion is not None:
+                img_list = self.scroll_screenshot(frame_postion)
+            else:
+                self.detectionFinished.emit({
+                    "msg": "没有在当前游戏窗口中找到成就的位置",
+                    "data": [],
+                    "type": "error",
+                })
+                return 
+        try:
+            ocr = OCR()
+            achievement_data = open_file(join_path(self.achievement['data_path']))
+            # 获取成就数据
+            processed_img_list = self.process_img_list(img_list)
+            ocr_result = ocr.run_list(processed_img_list)
+            ocr_text_list = []
+            for ocr_item in ocr_result:
+                ocr_text = ocr_item[1][0]
+                ocr_text_list.append(ocr_text)
+                
+            for achievement_item in achievement_data:
+                objective = achievement_item.get("Objective")
+                if objective in ocr_text_list:
+                    not_done_list.append(achievement_item)
+
+            self.detectionFinished.emit({
+                "msg":"检测完成……",
+                "data": not_done_list,
+                "type": "success",
+            })
         except Exception as e:
             print(e)
             self.detectionFinished.emit({
-                "msg":"识别失败",
+                "msg":"检测失败……请稍后再试，不行请咨询作者",
                 "data": [],
+                "type": "error",
             })
