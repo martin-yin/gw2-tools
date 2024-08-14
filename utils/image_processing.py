@@ -30,7 +30,7 @@ def get_images_by_path(path):
     for file in os.listdir(path):
         file_path = os.path.join(path, file)
         if os.path.isfile(file_path) and (file.endswith('.png') or file.endswith('.jpg') or file.endswith('.jpeg')):
-            image_list.append(imread(file_path, IMREAD_GRAYSCALE))
+            image_list.append(imread(file_path))
     
     return image_list
 

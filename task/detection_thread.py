@@ -26,7 +26,7 @@ class DetectionLightingThread(QThread):
         for i in range(5):
             screenshot = self.gw2_instance.get_frame(position)
             screenshot_list.append(screenshot)
-            time.sleep(0.2)
+            time.sleep(0.1)
             self.gw2_instance.scroll(5)
         return screenshot_list
 
@@ -87,8 +87,9 @@ class DetectionLightingThread(QThread):
                 "data": not_done_list,
                 "type": "success",
             })
+            ocr.exit()
         except Exception as e:
-            print(e)
+            ocr.exit()
             self.detectionFinished.emit({
                 "msg":"检测失败……请稍后再试，不行请咨询作者",
                 "data": [],
