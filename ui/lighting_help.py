@@ -1,9 +1,11 @@
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem, QHeaderView, QSizePolicy, QSizePolicy, QApplication
 from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ToolButton, TableWidget, InfoBar, InfoBarPosition
+from module.config.config import Config
 from task.detection_thread import DetectionLightingThread
 
-light_comboBox_list = ['照亮天空哨站群岛', '照亮阿姆尼塔斯', '照亮纳约斯内层']
+config = Config()
+
 class LightingHelpInterface(QFrame):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
@@ -18,46 +20,47 @@ class LightingHelpInterface(QFrame):
         self.vBoxLayout.setStretch(1, 1)
 
     def on_detection_signal(self, fload, achievement):
-        if fload != "" and achievement != "":
-            InfoBar.info(
-                title='检测完成后下方会展示未完成的成就',
-                content="",
-                orient=Qt.Horizontal,
-                isClosable=True,
-                position=InfoBarPosition.TOP_RIGHT,
-                duration=2000,
-                parent=self
-            )
-            not_done_list = []
-            self.detection_list_update(not_done_list)
+        InfoBar.info(
+            title='检测完成后下方会展示未完成的成就',
+            content="",
+            orient=Qt.Horizontal,
+            isClosable=True,
+            position=InfoBarPosition.TOP_RIGHT,
+            duration=2000,
+            parent=self
+        )
+        not_done_list = []
+        self.detection_list_update(not_done_list)
 
-            self.detection_thread = DetectionLightingThread(fload, achievement)
-            self.detection_thread.detectionFinished.connect(self.detection_list_update)
-            self.detection_thread.finished.connect(self.setButtonEnabled)
-            self.detection_thread.start()
+        self.detection_thread = DetectionLightingThread(fload, achievement)
+        self.detection_thread.detectionFinished.connect(self.detection_list_update)
+        self.detection_thread.finished.connect(self.setButtonEnabled)
+        self.detection_thread.start()
 
     def setButtonEnabled(self):
         self.floadWidget.detectionButton.setEnabled(True)
 
-    def detection_list_update(self, detection_list):
-        self.detectionTableWidget.update_table(detection_list)
+    def detection_list_update(self, result):
+        self.activateWindow()
+        # self.detectionTableWidget.update_table(detection_list)
+        print(result)
 
 class FloadWidget(QWidget):
-    detection_signal = Signal(str, str)
+    detection_signal = Signal(str, object)
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.setObjectName("FloadWidget")
-
+        light_comboBox_list = [item['name'] for item in config.get("achievements")]
+        
         self.achievementComboBoxValue = light_comboBox_list[0]
         self.vBoxLayout = QVBoxLayout(self)
-
         # 图片目录部分
         self.floadLabel = BodyLabel("目录：", self)
         self.floadLabel.setFixedWidth(60)
         self.floadButton = ToolButton(FluentIcon.FOLDER, self)
         self.floadLineEdit = LineEdit(self) 
         self.floadLineEdit.setFixedWidth(400)
-        self.floadLineEdit.setPlaceholderText("请选择图片目录")
+        self.floadLineEdit.setPlaceholderText("不选择目录则会通过脚本打开游戏抓取")
         self.floadButton.clicked.connect(self.floadButtonClicked)
 
         # 图片目录的水平布局
@@ -112,22 +115,10 @@ class FloadWidget(QWidget):
     
     def emit_detection_signal(self):
         fload = self.floadLineEdit.text()
-        achievement = self.achievementComboBoxValue
-        if fload == "":
-            InfoBar.error(
-                title='请选择图片目录',
-                content="",
-                orient=Qt.Horizontal,
-                isClosable=True,
-                position=InfoBarPosition.TOP_RIGHT,
-                duration=2000,
-                parent=self
-            )
-            return
-        
+        achievement_name = self.achievementComboBoxValue
+        achievement = next((item for item in config.get("achievements") if item['name'] == achievement_name), None)
         self.detectionButton.setEnabled(False)
         self.detection_signal.emit(fload, achievement)  # 发出信号
-
 
 class DetectionTableWidget(QWidget):
     def __init__(self, parent=None):

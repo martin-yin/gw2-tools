@@ -1,5 +1,5 @@
 import os
-from cv2 import matchTemplate, TM_CCOEFF_NORMED, cvtColor, threshold, rectangle, minMaxLoc, imread, IMREAD_GRAYSCALE, resize, matchTemplate, INTER_LINEAR, THRESH_BINARY
+from cv2 import matchTemplate, TM_CCOEFF_NORMED, threshold, rectangle, minMaxLoc, imread, IMREAD_GRAYSCALE, resize, matchTemplate, INTER_LINEAR, THRESH_BINARY
 from numpy import where, arange
 
 def match_template(img, template):
@@ -30,7 +30,7 @@ def get_images_by_path(path):
     for file in os.listdir(path):
         file_path = os.path.join(path, file)
         if os.path.isfile(file_path) and (file.endswith('.png') or file.endswith('.jpg') or file.endswith('.jpeg')):
-            image_list.append(file_path)
+            image_list.append(imread(file_path, IMREAD_GRAYSCALE))
     
     return image_list
 
