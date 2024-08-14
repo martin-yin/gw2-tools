@@ -63,11 +63,17 @@ class Gw2:
             base_offset_width = int(340 * 1.5)
             base_offset_height = int(570 * 1.5)
             rect = self.get_hwnd_rect()
+            letf = rect[0] + top_left[0] - int(16 * 1.5)
+            top = rect[1] + top_left[1]
+            right = rect[0] + top_left[0] + base_offset_width
+            bottom = rect[1] + top_left[1] + base_offset_height
+            # 偏移鼠标位置防止遮挡
+            pyautogui.moveTo(right, top)
             roi_coords = (
-                rect[0] + top_left[0] - int(16 * 1.5),
-                rect[1] + top_left[1],
-                rect[0] + top_left[0] + base_offset_width,
-                rect[1] + top_left[1] + base_offset_height
+                letf,
+                top,
+                right,
+                bottom
             )
             return roi_coords
         return None
