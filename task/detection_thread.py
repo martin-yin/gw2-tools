@@ -3,7 +3,6 @@ import os
 import time
 from PySide6.QtCore import Signal, QThread
 from cv2 import  COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, cvtColor, imread, resize
-from module.config.config import Config
 from module.gw2 import gw2_instance
 from module.ocr.ocr import OCR
 from utils.image_processing import draw_covered, get_images_by_path, match_template
@@ -16,7 +15,6 @@ class DetectionLightingThread(QThread):
         super().__init__()
         self.fload = fload
         self.achievement = achievement
-        self.config = Config()
         self.gw2_instance = gw2_instance
         # 后面放到首页去
         self.gw2_instance.get_hwnd()

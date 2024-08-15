@@ -1,31 +1,25 @@
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem, QHeaderView, QSizePolicy, QSizePolicy, QApplication
 from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ToolButton, TableWidget, InfoBar, InfoBarPosition, SubtitleLabel
-from module.config.config import Config
+from module.config import Config
 from task.detection_thread import DetectionLightingThread
-
 config = Config()
-
 class LightingHelpInterface(QFrame):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.setObjectName("LightingHelpInterface")
+        
         self.vBoxLayout = QVBoxLayout(self)
         self.vBoxLayout.setContentsMargins(20, 20, 20, 20)
         self.floadWidget = FloadWidget()
-        self.floadWidget.detection_signal.connect(self.on_detection_signal)
         self.detectionTableWidget = DetectionTableWidget()
-
-        self.vBoxLayout.addWidget(SubtitleLabel("点灯辅助"))
-        self.vBoxLayout.addSpacing(10) 
         self.vBoxLayout.addWidget(self.floadWidget)
         self.vBoxLayout.addWidget(self.detectionTableWidget)
+        self.floadWidget.detection_signal.connect(self.on_detection_signal)
 
     def on_detection_signal(self, fload, achievement):
-     
         not_done_list = []
         self.detection_list_update({'data': not_done_list, "msg": '', "type": 'info'})
-
         self.detection_thread = DetectionLightingThread(fload, achievement)
         self.detection_thread.detectionFinished.connect(self.detection_list_update)
         self.detection_thread.finished.connect(self.setButtonEnabled)

@@ -25,7 +25,6 @@ class Window(MSFluentWindow):
         self.addSubInterface(self.homeInterface, FIF.HOME, "主页")
         self.addSubInterface(self.scriptMacrosInterface, FIF.ROBOT, '脚本宏')
         self.addSubInterface(self.lightingHelpInterface, FIF.VIEW, '点灯辅助')
-        # self.addSubInterface(self.lightingHelpInterface, FIF.CUT, '日志')
 
         self.addSubInterface(self.seetingInterface, FIF.SETTING, '设置', FIF.SETTING, NavigationItemPosition.BOTTOM)
         self.navigationInterface.setCurrentItem(self.homeInterface.objectName())

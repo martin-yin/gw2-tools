@@ -1,15 +1,20 @@
 {
-    "achievements":[{
-        "name": "照亮纳约斯内层",
-        "template": "/assets/achievements/secrets_of_the_obscure/inner_nayos.png",
-        "data_path": "/assets/achievements/secrets_of_the_obscure/照亮纳约斯内层.json"
-    }, {
-        "name": "照亮天空哨站群岛",
-        "template": "/assets/achievements/secrets_of_the_obscure/skywatch_archipelago.png",
-        "data_path": "/assets/achievements/secrets_of_the_obscure/照亮天空哨站群岛.json"
-    }, {
-        "name": "照亮阿姆尼塔斯",
-        "template": "/assets/achievements/secrets_of_the_obscure/amnytas.png",
-        "data_path": "/assets/achievements/secrets_of_the_obscure/照亮阿姆尼塔斯.json"
-    }]
+    "achievements": [
+        {
+            "name": "照亮纳约斯内层",
+            "template": "/assets/achievements/secrets_of_the_obscure/inner_nayos.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/照亮纳约斯内层.json"
+        },
+        {
+            "name": "照亮天空哨站群岛",
+            "template": "/assets/achievements/secrets_of_the_obscure/skywatch_archipelago.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/照亮天空哨站群岛.json"
+        },
+        {
+            "name": "照亮阿姆尼塔斯",
+            "template": "/assets/achievements/secrets_of_the_obscure/amnytas.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/照亮阿姆尼塔斯.json"
+        }
+    ],
+    "script_macros": []
 }

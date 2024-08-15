@@ -36,8 +36,12 @@ class Config:
                 obj[k] = {}
             obj = obj[k]
         obj[keys[-1]] = value
+        self.config_data = obj
+        self.save()
 
     def save(self):
-        with open(self.filename, 'w') as file:
-            json.dump(self.config_data, file, indent=4)
+        with open(self.filename, 'w', encoding='utf-8') as file:
+            json.dump(self.config_data, file, indent=4, ensure_ascii=False)
 
+
+config = Config()
