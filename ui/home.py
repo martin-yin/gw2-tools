@@ -10,15 +10,13 @@ class HomeInterface(ScrollArea):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.view = QWidget(self)
-
         self.vBoxLayout = QVBoxLayout(self.view)
+        self.vBoxLayout.setContentsMargins(20, 20, 20, 20)
         image = ImageLabel(os.path.join(root_path(), "assets", "logo.png"))
         image.scaledToHeight(100)
         self.setWidget(self.view)
         self.setWidgetResizable(True)
         self.setObjectName("HomeInterface")
-        self.vBoxLayout.setContentsMargins(20, 20, 20, 20) 
-
         self.runButton = PushSettingCard(
             text="启动",
             icon=FluentIcon.GAME,

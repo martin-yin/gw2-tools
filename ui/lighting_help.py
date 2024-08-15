@@ -1,6 +1,6 @@
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDialog,  QTableWidgetItem, QHeaderView, QSizePolicy, QSizePolicy, QApplication
-from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ToolButton, TableWidget, InfoBar, InfoBarPosition
+from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ToolButton, TableWidget, InfoBar, InfoBarPosition, SubtitleLabel
 from module.config.config import Config
 from task.detection_thread import DetectionLightingThread
 
@@ -11,13 +11,15 @@ class LightingHelpInterface(QFrame):
         super().__init__(parent=parent)
         self.setObjectName("LightingHelpInterface")
         self.vBoxLayout = QVBoxLayout(self)
+        self.vBoxLayout.setContentsMargins(20, 20, 20, 20)
         self.floadWidget = FloadWidget()
         self.floadWidget.detection_signal.connect(self.on_detection_signal)
         self.detectionTableWidget = DetectionTableWidget()
+
+        self.vBoxLayout.addWidget(SubtitleLabel("点灯辅助"))
+        self.vBoxLayout.addSpacing(10) 
         self.vBoxLayout.addWidget(self.floadWidget)
         self.vBoxLayout.addWidget(self.detectionTableWidget)
-        self.vBoxLayout.setStretch(0, 0)  
-        self.vBoxLayout.setStretch(1, 1)
 
     def on_detection_signal(self, fload, achievement):
      
@@ -67,55 +69,43 @@ class FloadWidget(QWidget):
         
         self.achievementComboBoxValue = light_comboBox_list[0]
         self.vBoxLayout = QVBoxLayout(self)
-        # 图片目录部分
-        self.floadLabel = BodyLabel("目录：", self)
-        self.floadLabel.setFixedWidth(60)
-        self.floadButton = ToolButton(FluentIcon.FOLDER, self)
+        self.vBoxLayout.setContentsMargins(0, 0, 0, 0)
+        self.floadLabel = BodyLabel("目录：")
+        self.floadLabel.setFixedWidth(40)
+        self.floadButton = ToolButton(FluentIcon.FOLDER)
         self.floadLineEdit = LineEdit(self) 
         self.floadLineEdit.setFixedWidth(400)
         self.floadLineEdit.setPlaceholderText("不选择目录则会通过脚本打开游戏抓取，需要管理员运行哦~")
         self.floadButton.clicked.connect(self.floadButtonClicked)
 
-        # 图片目录的水平布局
         self.floadHBoxLayout = QHBoxLayout()
         self.floadHBoxLayout.addWidget(self.floadLabel)
         self.floadHBoxLayout.addWidget(self.floadLineEdit)
         self.floadHBoxLayout.addWidget(self.floadButton)
         self.floadHBoxLayout.addStretch(1)
 
-        # 成就列表部分
         self.achievementComboBox = ComboBox()
         self.achievementComboBox.addItems(light_comboBox_list)
-        self.achievementLabel = BodyLabel("成就：", self)
-        self.achievementLabel.setFixedWidth(60)
+        self.achievementLabel = BodyLabel("成就：")
+        self.achievementLabel.setFixedWidth(40)
         self.achievementComboBox.currentIndexChanged.connect(self.achievementComboBoxChanged)
 
-        # 成就的水平布局
         self.achievementHBoxLayout = QHBoxLayout()
         self.achievementHBoxLayout.addWidget(self.achievementLabel)
         self.achievementHBoxLayout.addWidget(self.achievementComboBox)
         self.achievementHBoxLayout.addStretch(1)    
-        # 设置边距
-        self.achievementHBoxLayout.setContentsMargins(0, 4, 0, 0)
-        # 照亮按钮部分
-        self.detectionButton = PushButton("检测", self)
-        self.detectionButton.clicked.connect(self.emit_detection_signal)  # 连接点击信号
+
+        self.detectionButton = PushButton("检测")
+        self.detectionButton.clicked.connect(self.emit_detection_signal) 
         self.detectionButton.setFixedWidth(80)
 
-        # 检测按钮的水平布局
-        self.detectionHBoxLayout = QHBoxLayout()
-        self.detectionHBoxLayout.addWidget(self.detectionButton)
-        self.detectionHBoxLayout.addStretch(1)
-
-        # 将所有子布局添加到主布局
         self.vBoxLayout.addLayout(self.floadHBoxLayout)
+        self.vBoxLayout.addSpacing(10) 
         self.vBoxLayout.addLayout(self.achievementHBoxLayout)
-        self.vBoxLayout.addLayout(self.detectionHBoxLayout)
-
-        self.setLayout(self.vBoxLayout)  # 设置主布局
+        self.vBoxLayout.addSpacing(10) 
+        self.vBoxLayout.addWidget(self.detectionButton)
 
     def floadButtonClicked(self):
-        # qt 打开文件选择框
         qFileDialog = QFileDialog()
         qFileDialog.setFileMode(QFileDialog.Directory)
         qFileDialog.setOption(QFileDialog.ShowDirsOnly, True)
@@ -138,6 +128,7 @@ class DetectionTableWidget(QWidget):
         super().__init__(parent=parent)
         self.setObjectName("DetectionListWidget")
         self.vBoxLayout = QVBoxLayout(self)
+        self.vBoxLayout.setContentsMargins(0, 0, 0, 0)
 
         self.detectionListLabel = BodyLabel("", self)
         self.detectionListLabel.hide()

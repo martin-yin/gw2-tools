@@ -5,6 +5,7 @@ from PySide6.QtWidgets import QApplication
 from qfluentwidgets import (NavigationItemPosition, MSFluentWindow, setTheme, Theme, FluentIcon as FIF)
 from ui.home import HomeInterface
 from ui.lighting_help import LightingHelpInterface
+from ui.script_macros import ScriptMacrosInterface
 from ui.setting import SeetingInterface
 from utils.utils import root_path
 
@@ -12,6 +13,7 @@ class Window(MSFluentWindow):
     def __init__(self):
         super().__init__()
         self.homeInterface = HomeInterface(self)
+        self.scriptMacrosInterface = ScriptMacrosInterface(self)
         self.lightingHelpInterface = LightingHelpInterface(self)
         self.seetingInterface = SeetingInterface(self)
 
@@ -21,6 +23,7 @@ class Window(MSFluentWindow):
 
     def initNavigation(self):
         self.addSubInterface(self.homeInterface, FIF.HOME, "主页")
+        self.addSubInterface(self.scriptMacrosInterface, FIF.ROBOT, '脚本宏')
         self.addSubInterface(self.lightingHelpInterface, FIF.VIEW, '点灯辅助')
         # self.addSubInterface(self.lightingHelpInterface, FIF.CUT, '日志')
 
