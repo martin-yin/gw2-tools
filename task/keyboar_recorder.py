@@ -5,11 +5,10 @@ from PySide6.QtCore import QThread, Signal, QWaitCondition, QMutex
 from pynput import keyboard
 
 class KeyboardRecorder(QThread):
-    recording_status_changed = Signal(str)
+    record_done = Signal(list)
 
-    def __init__(self, file_name):
+    def __init__(self):
         super().__init__()
-        self.file_name = file_name
         self.key_events = []
         self.last_time = None
         self.listening = False
@@ -22,18 +21,12 @@ class KeyboardRecorder(QThread):
     def on_press(self, key):
         if key == keyboard.Key.home:
             if not self.listening:
-                # 开始录制
-                print("开始监听按键事件...")
                 self.listening = True
                 self.last_time = None
                 self.pressed_keys.clear()
-                self.recording_status_changed.emit("record")
             else:
-                # 停止录制
-                print("停止监听按键事件...")
                 self.listening = False
-                self.save_to_json()
-                self.recording_status_changed.emit("stop")
+                self.record_done.emit(self.key_events)
             return
 
         if self.listening and key not in self.pressed_keys:
@@ -63,13 +56,7 @@ class KeyboardRecorder(QThread):
             self.last_time = current_time
             self.pressed_keys.remove(key)
 
-    def save_to_json(self):
-        with open(f'{self.file_name}.json', 'w') as f:
-            json.dump(self.key_events, f, indent=4)
-        print(f"按键事件已保存到 {self.file_name}.json")
-
     def run(self):
-        self.recording_status_changed.emit("start")
         # 监听键盘事件
         with keyboard.Listener(on_press=self.on_press, on_release=self.on_release) as listener:
             while not self.stop_request:
