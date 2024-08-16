@@ -35,7 +35,7 @@ def root_path():
     root_path = os.path.dirname(current_path)
     return root_path
 
-def join_path(dynamic_path):
+def get_abs_path(dynamic_path):
     """ 拼接路径 """
     trimmed_path = dynamic_path.lstrip('/')
     parts = trimmed_path.split('/')

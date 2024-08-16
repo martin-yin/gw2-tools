@@ -106,9 +106,8 @@ class ScriptMacrosTableWidget(QWidget):
 
         self.table = TableWidget(self)
         self.table.setColumnCount(2)
-        self.table.itemChanged.connect(self.on_item_changed) 
-        self.table.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
-        self.table.setColumnWidth(1, 140)
+        self.table.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
+        self.table.setColumnWidth(1, 160)
         self.table.horizontalHeader().setVisible(False)
         self.table.verticalHeader().setVisible(False)
         self.table.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
@@ -126,7 +125,6 @@ class ScriptMacrosTableWidget(QWidget):
             hbox = QHBoxLayout()
             hbox.setContentsMargins(0, 0, 0, 0)
             hbox.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
-
             test_button = PushButton("测试", self)
             test_button.setFixedWidth(60)
             test_button.setFixedHeight(30)
@@ -146,11 +144,5 @@ class ScriptMacrosTableWidget(QWidget):
             self.table.setCellWidget(i, 1, cell_widget)
 
     def button_clicked(self, index, type):
+        # self.table.setDisabled(True)
         self.table_signal.emit(index, type)
-
-    def on_item_changed(self, item):
-        if item.column() == 0:
-            script_macros = config.get("script_macros")
-            # script_macros[item.row()]["name"] = item.text()
-            # config.set("script_macros", script_macros)
-            # self.update_table(config.get("script_macros"))

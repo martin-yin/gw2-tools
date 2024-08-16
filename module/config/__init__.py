@@ -1,10 +1,10 @@
 import json
 import os
-from utils.utils import get_windows_scale, root_path
+from utils.utils import get_abs_path
 
 class Config:
-    def __init__(self, filename='config.json'):
-        self.filename = os.path.join(root_path(), filename)
+    def __init__(self, file_path='/assets/config.json'):
+        self.filename = get_abs_path(file_path)
         self.config_data = {}
         self.load()
 

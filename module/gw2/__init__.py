@@ -4,7 +4,7 @@ from cv2 import COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, TM_CCOEFF_NORMED
 import pyautogui
 from win32 import win32gui
 import dxcam
-from utils.utils import get_windows_scale, join_path
+from utils.utils import get_windows_scale, get_abs_path
 
 class Gw2:
     def __init__(self):
@@ -52,7 +52,7 @@ class Gw2:
         self.activate_window()
         time.sleep(1)
         window_scale = get_windows_scale()
-        template = imread(join_path(achievement), IMREAD_GRAYSCALE)
+        template = imread(get_abs_path(achievement), IMREAD_GRAYSCALE)
         scaled_template = resize(template, None, fx=window_scale, fy=window_scale, interpolation=INTER_LINEAR)
         initial_frame = self.get_frame(self.get_hwnd_rect())
         gray_frame = cvtColor(initial_frame, COLOR_BGR2GRAY)

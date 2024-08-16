@@ -1,0 +1,86 @@
+{
+    "achievements": [
+        {
+            "name": "照亮纳约斯内层",
+            "template": "/assets/achievements/secrets_of_the_obscure/inner_nayos.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/照亮纳约斯内层.json"
+        },
+        {
+            "name": "照亮天空哨站群岛",
+            "template": "/assets/achievements/secrets_of_the_obscure/skywatch_archipelago.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/照亮天空哨站群岛.json"
+        },
+        {
+            "name": "照亮阿姆尼塔斯",
+            "template": "/assets/achievements/secrets_of_the_obscure/amnytas.png",
+            "data_path": "/assets/achievements/secrets_of_the_obscure/照亮阿姆尼塔斯.json"
+        }
+    ],
+    "script_macros": [
+        {
+            "name": "新建脚本宏",
+            "script": [
+                {
+                    "event": "press",
+                    "interval": 0.0,
+                    "key": "'1'"
+                },
+                {
+                    "event": "release",
+                    "interval": 0.1,
+                    "key": "'1'"
+                },
+                {
+                    "event": "press",
+                    "interval": 0.15,
+                    "key": "'2'"
+                },
+                {
+                    "event": "release",
+                    "interval": 0.1,
+                    "key": "'2'"
+                },
+                {
+                    "event": "press",
+                    "interval": 0.14,
+                    "key": "'3'"
+                },
+                {
+                    "event": "release",
+                    "interval": 0.1,
+                    "key": "'3'"
+                },
+                {
+                    "event": "press",
+                    "interval": 0.25,
+                    "key": "'4'"
+                },
+                {
+                    "event": "release",
+                    "interval": 0.1,
+                    "key": "'4'"
+                },
+                {
+                    "event": "press",
+                    "interval": 0.21,
+                    "key": "'5'"
+                },
+                {
+                    "event": "release",
+                    "interval": 0.08,
+                    "key": "'5'"
+                },
+                {
+                    "event": "press",
+                    "interval": 0.18,
+                    "key": "'6'"
+                },
+                {
+                    "event": "release",
+                    "interval": 0.11,
+                    "key": "'6'"
+                }
+            ]
+        }
+    ]
+}

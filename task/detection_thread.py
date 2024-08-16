@@ -6,7 +6,7 @@ from cv2 import  COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, cvtColor, imrea
 from module.gw2 import gw2_instance
 from module.ocr.ocr import OCR
 from utils.image_processing import draw_covered, get_images_by_path, match_template
-from utils.utils import join_path, open_file, root_path
+from utils.utils import get_abs_path, open_file, root_path
 
 class DetectionLightingThread(QThread):
     detectionFinished = Signal(object)
@@ -66,7 +66,7 @@ class DetectionLightingThread(QThread):
                 return 
         try:
             ocr = OCR()
-            achievement_data = open_file(join_path(self.achievement['data_path']))
+            achievement_data = open_file(get_abs_path(self.achievement['data_path']))
             # 获取成就数据
             processed_img_list = self.process_img_list(img_list)
             ocr_result = ocr.run_list(processed_img_list)
