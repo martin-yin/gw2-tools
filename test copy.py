@@ -8,9 +8,8 @@ from pynput import keyboard
 class KeyboardRecorder(QThread):
     recording_status_changed = Signal(str)  # 用于通知主线程状态的信号
 
-    def __init__(self, file_name):
+    def __init__(self):
         super().__init__()
-        self.file_name = file_name
         self.key_events = []
         self.last_time = None
         self.listening = False
