@@ -13,7 +13,7 @@ class Gw2:
 
     def get_hwnd(self):
         """ 获取窗口句柄 """
-        if self.hwnd is None:
+        if self.hwnd is None or self.hwnd == 0:
             self.hwnd = win32gui.FindWindow(None, "激战2")
         return self.hwnd
     

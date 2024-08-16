@@ -2,13 +2,15 @@
 import os
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QVBoxLayout, QHBoxLayout, QWidget
-from qfluentwidgets import FluentIcon, ExpandGroupSettingCard, ScrollArea, BodyLabel, ComboBox, SwitchButton, ImageLabel, PushSettingCard
+from qfluentwidgets import FluentIcon, ExpandGroupSettingCard, ScrollArea, BodyLabel, ComboBox, SwitchButton, ImageLabel, PushSettingCard, InfoBar, InfoBarPosition
 from task.hotkey_thread import HotkeyThread
+from module.gw2 import gw2_instance
 from utils.utils import root_path
 
 class HomeInterface(ScrollArea):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
+        self.gw2_instance = gw2_instance
         self.view = QWidget(self)
         self.vBoxLayout = QVBoxLayout(self.view)
         self.vBoxLayout.setContentsMargins(20, 20, 20, 20)
@@ -17,13 +19,14 @@ class HomeInterface(ScrollArea):
         self.setWidget(self.view)
         self.setWidgetResizable(True)
         self.setObjectName("HomeInterface")
+        
         self.runButton = PushSettingCard(
             text="启动",
             icon=FluentIcon.GAME,
             title="激战2",
-            content="怕就别用, 用就别怕！装饰用的按钮…………"
+            content="怕就别用, 用就别怕！"
         )
-
+        self.runButton.clicked.connect(self.start_game)
         self.vBoxLayout.addWidget(image, alignment=Qt.AlignmentFlag.AlignCenter)
         self.vBoxLayout.addSpacing(10) 
         self.vBoxLayout.addWidget(self.runButton)
@@ -31,6 +34,22 @@ class HomeInterface(ScrollArea):
         self.vBoxLayout.addStretch(1)
         self.enableTransparentBackground()
 
+    def start_game(self):
+        gw2_instance.get_hwnd()
+        hwnd = gw2_instance.hwnd
+        if hwnd is None or hwnd == 0:
+            InfoBar.error(
+                title='启动失败',
+                content="Bro 你需要先启动游戏哦~！",
+                orient=Qt.Vertical,  # 内容太长时可使用垂直布局
+                isClosable=True,
+                position=InfoBarPosition.TOP_RIGHT,
+                duration=2000, 
+                parent=self
+            )
+        else:
+            self.runButton.setEnabled(False)
+            self.runButton.setText("已启动")
 class FastOperationCard(ExpandGroupSettingCard):
     
     def __init__(self, parent=None):

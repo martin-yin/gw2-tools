@@ -3,6 +3,8 @@ from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QWidget, QFileDi
 from qfluentwidgets import FluentIcon , PushButton, LineEdit, ComboBox, BodyLabel, ToolButton, TableWidget, InfoBar, InfoBarPosition, SubtitleLabel
 from module.config import Config
 from task.detection_thread import DetectionLightingThread
+from module.gw2 import gw2_instance
+
 config = Config()
 class LightingHelpInterface(QFrame):
     def __init__(self, parent=None):
@@ -18,6 +20,22 @@ class LightingHelpInterface(QFrame):
         self.floadWidget.detection_signal.connect(self.on_detection_signal)
 
     def on_detection_signal(self, fload, achievement):
+        if fload == '':
+            gw2_instance.get_hwnd()
+            hwnd = gw2_instance.hwnd
+            if hwnd is None or hwnd == 0:
+                self.floadWidget.detectionButton.setEnabled(True)
+                InfoBar.error(
+                    title='启动失败',
+                    content="Bro 你需要先启动游戏哦~！",
+                    orient=Qt.Vertical,  # 内容太长时可使用垂直布局
+                    isClosable=True,
+                    position=InfoBarPosition.TOP_RIGHT,
+                    duration=2000, 
+                    parent=self
+                )
+                return
+            
         not_done_list = []
         self.detection_list_update({'data': not_done_list, "msg": '', "type": 'info'})
         self.detection_thread = DetectionLightingThread(fload, achievement)

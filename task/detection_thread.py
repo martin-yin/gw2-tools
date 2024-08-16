@@ -16,8 +16,6 @@ class DetectionLightingThread(QThread):
         self.fload = fload
         self.achievement = achievement
         self.gw2_instance = gw2_instance
-        # 后面放到首页去
-        self.gw2_instance.get_hwnd()
 
     def scroll_screenshot(self, position):
         screenshot_list = []
