@@ -1,5 +1,3 @@
-import sys
-import json
 import time
 from PySide6.QtCore import QThread, Signal, QWaitCondition, QMutex
 from pynput import keyboard
@@ -32,7 +30,7 @@ class KeyboardRecorder(QThread):
         if self.listening and key not in self.pressed_keys:
             current_time = time.time()
             interval = round(current_time - self.last_time, 2) if self.last_time is not None else 0.00
-
+            print(key, '====')
             self.key_events.append({
                 'event': 'press',
                 'key': str(key),

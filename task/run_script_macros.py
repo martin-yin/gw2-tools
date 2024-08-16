@@ -17,21 +17,18 @@ class RunScriptMacrosThread(QThread):
 
     def run(self):
         self.gw2_instance.get_hwnd()
-        time.sleep(1)
         self.gw2_instance.activate_window()
-        time.sleep(1)
-        for macro in self.script_macros:
-            event = macro['event']
-            key = macro['key'].strip("'")  # 去掉引号
-            interval = macro['interval']
+        time.sleep(0.1)
+        for i in range(100):
+            for macro in self.script_macros:
+                event = macro['event']
+                key = macro['key'].strip("'")  # 去掉引号
+                interval = macro['interval']
+                time.sleep(interval)
+                if event == 'press':
+                    keyboard.press(key)
+                elif event == 'release':
+                    keyboard.release(key)
 
-            time.sleep(interval)
-
-            if event == 'press':
-                keyboard.press(key)
-            elif event == 'release':
-                keyboard.release(key)
-
-            # 可选：发射信号通知外部监听器
-            self.run_script_signal.emit(macro)
-9
+                # 可选：发射信号通知外部监听器
+                self.run_script_signal.emit(macro)
