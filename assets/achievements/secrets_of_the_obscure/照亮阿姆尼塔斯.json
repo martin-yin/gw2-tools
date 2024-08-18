@@ -1,6 +1,6 @@
 [
     {
-        "Objective": "Bastion of Balance Waypoint",
+        "Objective": "平衡堡垒传送点",
         "Map": "https://wiki.guildwars2.com//images/thumb/9/9a/Illuminating_Amnytas_-_01_Bastion_of_Balance_Waypoint_map.jpg/150px-Illuminating_Amnytas_-_01_Bastion_of_Balance_Waypoint_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/4/4c/Illuminating_Amnytas_-_01_Bastion_of_Balance_Waypoint_location.jpg/150px-Illuminating_Amnytas_-_01_Bastion_of_Balance_Waypoint_location.jpg",
         "Closest landmark": "Bastion of Balance Waypoint",
@@ -8,7 +8,7 @@
         "Notes": "Visible from the waypoint, facing southeast"
     },
     {
-        "Objective": "Bastion of Knowledge Waypoint",
+        "Objective": "知识堡垒传送点",
         "Map": "https://wiki.guildwars2.com//images/thumb/1/1b/Illuminating_Amnytas_-_02_Bastion_of_Knowledge_Waypoint_map.jpg/150px-Illuminating_Amnytas_-_02_Bastion_of_Knowledge_Waypoint_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/c/c4/Illuminating_Amnytas_-_02_Bastion_of_Knowledge_Waypoint_location.jpg/150px-Illuminating_Amnytas_-_02_Bastion_of_Knowledge_Waypoint_location.jpg",
         "Closest landmark": "Bastion of Knowledge Waypoint",
@@ -16,7 +16,7 @@
         "Notes": "Not visible from the waypoint, behind the wall facing west"
     },
     {
-        "Objective": "Bastion of Strength Waypoint",
+        "Objective": "力量堡垒传送点",
         "Map": "https://wiki.guildwars2.com//images/thumb/3/34/Illuminating_Amnytas_-_03_Bastion_of_Strength_Waypoint_map.jpg/150px-Illuminating_Amnytas_-_03_Bastion_of_Strength_Waypoint_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/d/d4/Illuminating_Amnytas_-_03_Bastion_of_Strength_Waypoint_location.jpg/150px-Illuminating_Amnytas_-_03_Bastion_of_Strength_Waypoint_location.jpg",
         "Closest landmark": "Bastion of Strength Waypoint",
@@ -24,7 +24,7 @@
         "Notes": "Visible from the waypoint, facing south-southeast"
     },
     {
-        "Objective": "Bastion of the Celestial Waypoint",
+        "Objective": "天界堡垒传送点",
         "Map": "https://wiki.guildwars2.com//images/thumb/f/f7/Illuminating_Amnytas_-_04_Bastion_of_the_Celestial_Waypoint_map.jpg/150px-Illuminating_Amnytas_-_04_Bastion_of_the_Celestial_Waypoint_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/b/b2/Illuminating_Amnytas_-_04_Bastion_of_the_Celestial_Waypoint_location.jpg/150px-Illuminating_Amnytas_-_04_Bastion_of_the_Celestial_Waypoint_location.jpg",
         "Closest landmark": "Bastion of the Celestial Waypoint",
@@ -32,7 +32,7 @@
         "Notes": "Visible from the waypoint, facing south, on the other side of the structure"
     },
     {
-        "Objective": "Bastion of the Natural Waypoint",
+        "Objective": "自然堡垒传送点",
         "Map": "https://wiki.guildwars2.com//images/thumb/9/99/Illuminating_Amnytas_-_05_Bastion_of_the_Natural_Waypoint_map.jpg/150px-Illuminating_Amnytas_-_05_Bastion_of_the_Natural_Waypoint_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/3/37/Illuminating_Amnytas_-_05_Bastion_of_the_Natural_Waypoint_location.jpg/150px-Illuminating_Amnytas_-_05_Bastion_of_the_Natural_Waypoint_location.jpg",
         "Closest landmark": "Bastion of the Natural Waypoint",
@@ -40,7 +40,7 @@
         "Notes": "Partially obscured from the waypoint, facing northeast, down the stairs"
     },
     {
-        "Objective": "Bastion of the Obscure Waypoint",
+        "Objective": "迷暗堡垒传送点",
         "Map": "https://wiki.guildwars2.com//images/thumb/8/87/Illuminating_Amnytas_-_06_Bastion_of_the_Obscure_Waypoint_map.jpg/150px-Illuminating_Amnytas_-_06_Bastion_of_the_Obscure_Waypoint_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/0/00/Illuminating_Amnytas_-_06_Bastion_of_the_Obscure_Waypoint_location.png/150px-Illuminating_Amnytas_-_06_Bastion_of_the_Obscure_Waypoint_location.png",
         "Closest landmark": "Bastion of the Obscure Waypoint",
@@ -48,7 +48,7 @@
         "Notes": "Travel west from waypoint then south, next to a column at the north end of the room."
     },
     {
-        "Objective": "Spire's Heart",
+        "Objective": "世界之脊中心",
         "Map": "https://wiki.guildwars2.com//images/thumb/8/87/Illuminating_Amnytas_-_07_Spire%27s_Heart_map.jpg/150px-Illuminating_Amnytas_-_07_Spire%27s_Heart_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/e/ec/Illuminating_Amnytas_-_07_Spire%27s_Heart_location.jpg/150px-Illuminating_Amnytas_-_07_Spire%27s_Heart_location.jpg",
         "Closest landmark": "Spire's Heart",
@@ -56,7 +56,7 @@
         "Notes": "Below the high platform. About level with the outer platforms."
     },
     {
-        "Objective": "Celestial Control Ring",
+        "Objective": "天界控制环",
         "Map": "https://wiki.guildwars2.com//images/thumb/8/85/Illuminating_Amnytas_-_08_Celestial_Control_Ring_map.jpg/150px-Illuminating_Amnytas_-_08_Celestial_Control_Ring_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/a/a7/Illuminating_Amnytas_-_08_Celestial_Control_Ring_location.jpg/150px-Illuminating_Amnytas_-_08_Celestial_Control_Ring_location.jpg",
         "Closest landmark": "Celestial Control Ring",
@@ -64,7 +64,7 @@
         "Notes": "On the middle platform at the western side"
     },
     {
-        "Objective": "Cosmic Theater Ring",
+        "Objective": "宇宙剧场环",
         "Map": "https://wiki.guildwars2.com//images/thumb/3/3c/Illuminating_Amnytas_-_09_Cosmic_Theater_Ring_map.jpg/150px-Illuminating_Amnytas_-_09_Cosmic_Theater_Ring_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/0/00/Illuminating_Amnytas_-_09_Cosmic_Theater_Ring_location.png/150px-Illuminating_Amnytas_-_09_Cosmic_Theater_Ring_location.png",
         "Closest landmark": "Cosmic Theater Ring",
@@ -72,7 +72,7 @@
         "Notes": "On the middle platform at the southeastern side"
     },
     {
-        "Objective": "Astronomic Nexus Ring",
+        "Objective": "天文枢纽环",
         "Map": "https://wiki.guildwars2.com//images/thumb/7/71/Illuminating_Amnytas_-_10_Astronomic_Nexus_Ring_map.jpg/150px-Illuminating_Amnytas_-_10_Astronomic_Nexus_Ring_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/a/aa/Illuminating_Amnytas_-_10_Astronomic_Nexus_Ring_location.jpg/150px-Illuminating_Amnytas_-_10_Astronomic_Nexus_Ring_location.jpg",
         "Closest landmark": "Astronomic Nexus Ring",
@@ -80,7 +80,7 @@
         "Notes": "On the middle platform at the northern side"
     },
     {
-        "Objective": "Empyreal Observation Ring",
+        "Objective": "至纯观察环",
         "Map": "https://wiki.guildwars2.com//images/thumb/5/55/Illuminating_Amnytas_-_11_Empyreal_Observation_Ring_map.jpg/150px-Illuminating_Amnytas_-_11_Empyreal_Observation_Ring_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/2/2f/Illuminating_Amnytas_-_11_Empyreal_Observation_Ring_location.png/150px-Illuminating_Amnytas_-_11_Empyreal_Observation_Ring_location.png",
         "Closest landmark": "Empyreal Observation Ring",
@@ -88,7 +88,7 @@
         "Notes": "On the middle platform at the northwestern side"
     },
     {
-        "Objective": "Cartography Chamber",
+        "Objective": "绘图室",
         "Map": "https://wiki.guildwars2.com//images/thumb/8/8e/Illuminating_Amnytas_-_12_Cartography_Chamber_map.jpg/150px-Illuminating_Amnytas_-_12_Cartography_Chamber_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/0/0d/Illuminating_Amnytas_-_12_Cartography_Chamber_location.jpg/150px-Illuminating_Amnytas_-_12_Cartography_Chamber_location.jpg",
         "Closest landmark": "Cartography Chamber",
@@ -96,7 +96,7 @@
         "Notes": "Inside and to the left."
     },
     {
-        "Objective": "Natatorium Obscurus",
+        "Objective": "秘密泳池",
         "Map": "https://wiki.guildwars2.com//images/thumb/2/26/Illuminating_Amnytas_-_13_Natatorium_Obscurus_map.jpg/150px-Illuminating_Amnytas_-_13_Natatorium_Obscurus_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/b/be/Illuminating_Amnytas_-_13_Natatorium_Obscurus_location.jpg/150px-Illuminating_Amnytas_-_13_Natatorium_Obscurus_location.jpg",
         "Closest landmark": "Natatorium Obscurus",
@@ -104,7 +104,7 @@
         "Notes": "Located by the fishing pool above  Natatorium Obscurus — [&BNoNAAA=]. Can be easily reached by going to  The Riftworks — [&BAwOAAA=] and using the updraft generator there, then the one at the northeast corner of the floor above."
     },
     {
-        "Objective": "The Riftworks",
+        "Objective": "裂隙工事",
         "Map": "https://wiki.guildwars2.com//images/thumb/5/51/Illuminating_Amnytas_-_14_The_Riftworks_map.jpg/150px-Illuminating_Amnytas_-_14_The_Riftworks_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/2/25/Illuminating_Amnytas_-_14_The_Riftworks_location.jpg/150px-Illuminating_Amnytas_-_14_The_Riftworks_location.jpg",
         "Closest landmark": "The Riftworks",
@@ -112,7 +112,7 @@
         "Notes": "Inside to the south of the PoI, near a wall"
     },
     {
-        "Objective": "Contretemps",
+        "Objective": "意外事故",
         "Map": "https://wiki.guildwars2.com//images/thumb/d/d1/Illuminating_Amnytas_-_15_Contretemps_map.jpg/150px-Illuminating_Amnytas_-_15_Contretemps_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/9/97/Illuminating_Amnytas_-_15_Contretemps_location.jpg/150px-Illuminating_Amnytas_-_15_Contretemps_location.jpg",
         "Closest landmark": "Contretemps",
@@ -120,7 +120,7 @@
         "Notes": "Enter from south side of building, look for hallway to the left."
     },
     {
-        "Objective": "Relic Repository",
+        "Objective": "古物仓库",
         "Map": "https://wiki.guildwars2.com//images/thumb/3/3d/Illuminating_Amnytas_-_16_Relic_Repository_map.jpg/150px-Illuminating_Amnytas_-_16_Relic_Repository_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/3/3f/Illuminating_Amnytas_-_16_Relic_Repository_location.jpg/150px-Illuminating_Amnytas_-_16_Relic_Repository_location.jpg",
         "Closest landmark": "Relic Repository",
@@ -128,7 +128,7 @@
         "Notes": "Southeast of the PoI, ground floor near the crates"
     },
     {
-        "Objective": "Spiritual Center",
+        "Objective": "精魂中心",
         "Map": "https://wiki.guildwars2.com//images/thumb/7/7d/Illuminating_Amnytas_-_17_Spiritual_Center_map.jpg/150px-Illuminating_Amnytas_-_17_Spiritual_Center_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/a/ab/Illuminating_Amnytas_-_17_Spiritual_Center_location.jpg/150px-Illuminating_Amnytas_-_17_Spiritual_Center_location.jpg",
         "Closest landmark": "Spiritual Center",
@@ -136,7 +136,7 @@
         "Notes": "Northeast of the PoI, at floor level"
     },
     {
-        "Objective": "Akeem's Tower",
+        "Objective": "阿奇姆之塔",
         "Map": "https://wiki.guildwars2.com//images/thumb/4/4f/Illuminating_Amnytas_-_18_Akeem%27s_Tower_map.jpg/150px-Illuminating_Amnytas_-_18_Akeem%27s_Tower_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/2/28/Illuminating_Amnytas_-_18_Akeem%27s_Tower_location.jpg/150px-Illuminating_Amnytas_-_18_Akeem%27s_Tower_location.jpg",
         "Closest landmark": "Akeem's Tower",
@@ -144,7 +144,7 @@
         "Notes": "Northwest of the PoI outside the tower"
     },
     {
-        "Objective": "Great Debate Hall",
+        "Objective": "辩论大厅",
         "Map": "https://wiki.guildwars2.com//images/thumb/4/43/Illuminating_Amnytas_-_19_Great_Debate_Hall_map.jpg/150px-Illuminating_Amnytas_-_19_Great_Debate_Hall_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/2/2d/Illuminating_Amnytas_-_19_Great_Debate_Hall_location.jpg/150px-Illuminating_Amnytas_-_19_Great_Debate_Hall_location.jpg",
         "Closest landmark": "Great Debate Hall",
@@ -152,7 +152,7 @@
         "Notes": "Just outside the door to the great debate hall"
     },
     {
-        "Objective": "Equilibrium Glade",
+        "Objective": "平心林地",
         "Map": "https://wiki.guildwars2.com//images/thumb/a/a3/Illuminating_Amnytas_-_20_Equilibrium_Glade_map.jpg/150px-Illuminating_Amnytas_-_20_Equilibrium_Glade_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/d/d6/Illuminating_Amnytas_-_20_Equilibrium_Glade_location.jpg/150px-Illuminating_Amnytas_-_20_Equilibrium_Glade_location.jpg",
         "Closest landmark": "Equilibrium Glade",
@@ -160,7 +160,7 @@
         "Notes": "East of the PoI, at the corner of a wall and a natural bridge"
     },
     {
-        "Objective": "Dubious Islet",
+        "Objective": "可疑小岛",
         "Map": "https://wiki.guildwars2.com//images/thumb/7/77/Illuminating_Amnytas_-_21_Dubious_Islet_map.jpg/150px-Illuminating_Amnytas_-_21_Dubious_Islet_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/0/0c/Illuminating_Amnytas_-_21_Dubious_Islet_location.jpg/150px-Illuminating_Amnytas_-_21_Dubious_Islet_location.jpg",
         "Closest landmark": "Dubious Islet",
@@ -168,7 +168,7 @@
         "Notes": "Southeast of the PoI amongst Veteran Sky-Chak Slinger"
     },
     {
-        "Objective": "Vass Memorial Medical Plaza",
+        "Objective": "瓦思纪念医疗广场",
         "Map": "https://wiki.guildwars2.com//images/thumb/0/09/Illuminating_Amnytas_-_22_Vass_Memorial_Medical_Plaza_map.jpg/150px-Illuminating_Amnytas_-_22_Vass_Memorial_Medical_Plaza_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/4/4e/Illuminating_Amnytas_-_22_Vass_Memorial_Medical_Plaza_location.jpg/150px-Illuminating_Amnytas_-_22_Vass_Memorial_Medical_Plaza_location.jpg",
         "Closest landmark": "Vass Memorial Medical Plaza",
@@ -176,7 +176,7 @@
         "Notes": "Due North of the PoI on the other side of the wall"
     },
     {
-        "Objective": "Thaumaturgy Park",
+        "Objective": "奇术公园",
         "Map": "https://wiki.guildwars2.com//images/thumb/a/ac/Illuminating_Amnytas_-_23_Thaumaturgy_Park_map.jpg/150px-Illuminating_Amnytas_-_23_Thaumaturgy_Park_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/f/f8/Illuminating_Amnytas_-_23_Thaumaturgy_Park_location.jpg/150px-Illuminating_Amnytas_-_23_Thaumaturgy_Park_location.jpg",
         "Closest landmark": "Thaumaturgy Park",
@@ -184,7 +184,7 @@
         "Notes": "North of the PoI near a rock wall"
     },
     {
-        "Objective": "Lyhr's Tower",
+        "Objective": "莱尔之塔",
         "Map": "https://wiki.guildwars2.com//images/thumb/a/a8/Illuminating_Amnytas_-_24_Lyhr%27s_Tower_map.jpg/150px-Illuminating_Amnytas_-_24_Lyhr%27s_Tower_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/1/13/Illuminating_Amnytas_-_24_Lyhr%27s_Tower_location.jpg/150px-Illuminating_Amnytas_-_24_Lyhr%27s_Tower_location.jpg",
         "Closest landmark": "Lyhr's Tower",
@@ -192,7 +192,7 @@
         "Notes": "Can be easily spotted by facing west from the vista."
     },
     {
-        "Objective": "Crystalpool",
+        "Objective": "水晶池",
         "Map": "https://wiki.guildwars2.com//images/thumb/2/25/Illuminating_Amnytas_-_25_Crystalpool_map.jpg/150px-Illuminating_Amnytas_-_25_Crystalpool_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/f/f5/Illuminating_Amnytas_-_25_Crystalpool_location.jpg/150px-Illuminating_Amnytas_-_25_Crystalpool_location.jpg",
         "Closest landmark": "Crystalpool",
@@ -200,7 +200,7 @@
         "Notes": "North of Crystalpool PoI"
     },
     {
-        "Objective": "Might's Brink Thicket",
+        "Objective": "力量源头丛林",
         "Map": "https://wiki.guildwars2.com//images/thumb/6/67/Illuminating_Amnytas_-_26_Might%27s_Brink_Thicket_map.jpg/150px-Illuminating_Amnytas_-_26_Might%27s_Brink_Thicket_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/e/e6/Illuminating_Amnytas_-_26_Might%27s_Brink_Thicket_location.jpg/150px-Illuminating_Amnytas_-_26_Might%27s_Brink_Thicket_location.jpg",
         "Closest landmark": "Might's Brink Thicket",
@@ -208,7 +208,7 @@
         "Notes": "North of PoI near a cliff edge"
     },
     {
-        "Objective": "Defensive Operations Camp",
+        "Objective": "防御行动营地",
         "Map": "https://wiki.guildwars2.com//images/thumb/0/02/Illuminating_Amnytas_-_27_Defensive_Operations_Camp_map.jpg/150px-Illuminating_Amnytas_-_27_Defensive_Operations_Camp_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/3/36/Illuminating_Amnytas_-_27_Defensive_Operations_Camp_location.jpg/150px-Illuminating_Amnytas_-_27_Defensive_Operations_Camp_location.jpg",
         "Closest landmark": "Defensive Operations Camp",
@@ -216,7 +216,7 @@
         "Notes": "Southeast of PoI between an Astral Ward shelter and a wall"
     },
     {
-        "Objective": "Kryptis Front Line",
+        "Objective": "氪族前线",
         "Map": "https://wiki.guildwars2.com//images/thumb/2/23/Illuminating_Amnytas_-_28_Kryptis_Front_Line_map.png/150px-Illuminating_Amnytas_-_28_Kryptis_Front_Line_map.png",
         "Location": "https://wiki.guildwars2.com//images/thumb/4/46/Illuminating_Amnytas_-_28_Kryptis_Front_Line_location.png/150px-Illuminating_Amnytas_-_28_Kryptis_Front_Line_location.png",
         "Closest landmark": "Kryptis Front Line",
@@ -224,7 +224,7 @@
         "Notes": "North of POI and to the left."
     },
     {
-        "Objective": "Courtyard of Gathering Strength",
+        "Objective": "聚力庭院",
         "Map": "https://wiki.guildwars2.com//images/thumb/7/73/Illuminating_Amnytas_-_29_Courtyard_of_Gathering_Strength_map.jpg/150px-Illuminating_Amnytas_-_29_Courtyard_of_Gathering_Strength_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/3/35/Illuminating_Amnytas_-_29_Courtyard_of_Gathering_Strength_location.jpg/150px-Illuminating_Amnytas_-_29_Courtyard_of_Gathering_Strength_location.jpg",
         "Closest landmark": "Courtyard of Gathering Strength",
@@ -232,7 +232,7 @@
         "Notes": "On a balcony above PoI, to the south, a short distance from  Bastion of Strength Waypoint — [&BNMNAAA=]"
     },
     {
-        "Objective": "Spellcrafting Workshop",
+        "Objective": "法术制作工坊",
         "Map": "https://wiki.guildwars2.com//images/thumb/3/3d/Illuminating_Amnytas_-_30_Spellcrafting_Workshop_map2.png/150px-Illuminating_Amnytas_-_30_Spellcrafting_Workshop_map2.png",
         "Location": "https://wiki.guildwars2.com//images/thumb/4/43/Illuminating_Amnytas_-_30_Spellcrafting_Workshop_location.jpg/150px-Illuminating_Amnytas_-_30_Spellcrafting_Workshop_location.jpg",
         "Closest landmark": "Spellcrafting Workshop",
@@ -240,7 +240,7 @@
         "Notes": "Outside the hall east of the Spellcrafting Workshop, under the stairs south of Defensive Operations Camp"
     },
     {
-        "Objective": "Circle of Rituals",
+        "Objective": "仪式之环",
         "Map": "https://wiki.guildwars2.com//images/thumb/e/ef/Illuminating_Amnytas_-_31_Circle_of_Rituals_map.jpg/150px-Illuminating_Amnytas_-_31_Circle_of_Rituals_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/8/8f/Illuminating_Amnytas_-_31_Circle_of_Rituals_location.jpg/150px-Illuminating_Amnytas_-_31_Circle_of_Rituals_location.jpg",
         "Closest landmark": "Circle of Rituals",
@@ -248,7 +248,7 @@
         "Notes": "West of POI behind a tree on the cliff edge."
     },
     {
-        "Objective": "Astral Ward Training Grounds",
+        "Objective": "星界圣盾训练场",
         "Map": "https://wiki.guildwars2.com//images/thumb/6/66/Illuminating_Amnytas_-_32_Astral_Ward_Training_Grounds_map.jpg/150px-Illuminating_Amnytas_-_32_Astral_Ward_Training_Grounds_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/c/c6/Illuminating_Amnytas_-_32_Astral_Ward_Training_Grounds_location.jpg/150px-Illuminating_Amnytas_-_32_Astral_Ward_Training_Grounds_location.jpg",
         "Closest landmark": "Astral Ward Training Grounds",
@@ -256,7 +256,7 @@
         "Notes": "On the outer ledge, northwest of PoI, near a large updraft"
     },
     {
-        "Objective": "Mabon's Tower",
+        "Objective": "玛邦之塔",
         "Map": "https://wiki.guildwars2.com//images/thumb/3/30/Illuminating_Amnytas_-_33_Mabon%27s_Tower_map.jpg/150px-Illuminating_Amnytas_-_33_Mabon%27s_Tower_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/c/c0/Illuminating_Amnytas_-_33_Mabon%27s_Tower_location.jpg/150px-Illuminating_Amnytas_-_33_Mabon%27s_Tower_location.jpg",
         "Closest landmark": "Mabon's Tower",
@@ -264,7 +264,7 @@
         "Notes": "At 'ground' level north east of the tower's poi."
     },
     {
-        "Objective": "Erudition Arcade",
+        "Objective": "博学拱廊",
         "Map": "https://wiki.guildwars2.com//images/thumb/d/db/Illuminating_Amnytas_-_34_Erudition_Arcade_map.jpg/150px-Illuminating_Amnytas_-_34_Erudition_Arcade_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/3/32/Illuminating_Amnytas_-_34_Erudition_Arcade_location.jpg/150px-Illuminating_Amnytas_-_34_Erudition_Arcade_location.jpg",
         "Closest landmark": "Erudition Arcade",
@@ -272,7 +272,7 @@
         "Notes": "Southeast of Erudition Arcade PoI"
     },
     {
-        "Objective": "Grand Library of Amnytas",
+        "Objective": "阿姆尼塔斯大图书馆",
         "Map": "https://wiki.guildwars2.com//images/thumb/3/3b/Illuminating_Amnytas_-_35_Grand_Library_of_Amnytas_map.jpg/150px-Illuminating_Amnytas_-_35_Grand_Library_of_Amnytas_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/7/72/Illuminating_Amnytas_-_35_Grand_Library_of_Amnytas_location.jpg/150px-Illuminating_Amnytas_-_35_Grand_Library_of_Amnytas_location.jpg",
         "Closest landmark": "Grand Library of Amnytas",
@@ -280,7 +280,7 @@
         "Notes": "At the 'middle' ledges (inline with the plants) southeast of the PoI"
     },
     {
-        "Objective": "Museum of Curiosities: Hall of Giants",
+        "Objective": "新奇博物馆:巨人大厅",
         "Map": "https://wiki.guildwars2.com//images/thumb/d/de/Illuminating_Amnytas_-_36_Museum_of_Curiosities-_Hall_of_Giants_map.jpg/150px-Illuminating_Amnytas_-_36_Museum_of_Curiosities-_Hall_of_Giants_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/c/c2/Illuminating_Amnytas_-_36_Museum_of_Curiosities-_Hall_of_Giants_location.jpg/150px-Illuminating_Amnytas_-_36_Museum_of_Curiosities-_Hall_of_Giants_location.jpg",
         "Closest landmark": "Museum of Curiosities: Hall of Giants",
@@ -288,7 +288,7 @@
         "Notes": "Inside of doorway on eastern side of building. Between two giants."
     },
     {
-        "Objective": "Museum of Curiosities: Main Gallery",
+        "Objective": "新奇博物馆:主长廊",
         "Map": "https://wiki.guildwars2.com//images/thumb/3/37/Illuminating_Amnytas_-_37_Museum_of_Curiosities-_Main_Gallery_map.jpg/150px-Illuminating_Amnytas_-_37_Museum_of_Curiosities-_Main_Gallery_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/2/27/Illuminating_Amnytas_-_37_Museum_of_Curiosities-_Main_Gallery_location.jpg/150px-Illuminating_Amnytas_-_37_Museum_of_Curiosities-_Main_Gallery_location.jpg",
         "Closest landmark": "Museum of Curiosities: Main Gallery",
@@ -296,7 +296,7 @@
         "Notes": "Between Pillar Guardian and Shattered Templar exhibits. Hidden inside the wall."
     },
     {
-        "Objective": "Pool of Reflection",
+        "Objective": "反射之池",
         "Map": "https://wiki.guildwars2.com//images/thumb/f/f0/Illuminating_Amnytas_-_38_Pool_of_Reflection_map.jpg/150px-Illuminating_Amnytas_-_38_Pool_of_Reflection_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/a/ab/Illuminating_Amnytas_-_38_Pool_of_Reflection_location.jpg/150px-Illuminating_Amnytas_-_38_Pool_of_Reflection_location.jpg",
         "Closest landmark": "Pool of Reflection",
@@ -304,7 +304,7 @@
         "Notes": "On a balcony ledge northwest of the PoI"
     },
     {
-        "Objective": "Cellar of Arcana",
+        "Objective": "秘法地窖",
         "Map": "https://wiki.guildwars2.com//images/thumb/2/2f/Illuminating_Amnytas_-_39_Cellar_of_Arcana_map.jpg/150px-Illuminating_Amnytas_-_39_Cellar_of_Arcana_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/a/a0/Illuminating_Amnytas_-_39_Cellar_of_Arcana_location.jpg/150px-Illuminating_Amnytas_-_39_Cellar_of_Arcana_location.jpg",
         "Closest landmark": "Cellar of Arcana",
@@ -312,7 +312,7 @@
         "Notes": "Outside the door blocking the Western entrance to the cellar."
     },
     {
-        "Objective": "Isgarren's Tower",
+        "Objective": "伊斯加然之塔",
         "Map": "https://wiki.guildwars2.com//images/thumb/a/a2/Illuminating_Amnytas_-_40_Isgarren%27s_Tower_map.jpg/150px-Illuminating_Amnytas_-_40_Isgarren%27s_Tower_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/2/21/Illuminating_Amnytas_-_40_Isgarren%27s_Tower_location.jpg/150px-Illuminating_Amnytas_-_40_Isgarren%27s_Tower_location.jpg",
         "Closest landmark": "Isgarren's Tower",
@@ -320,7 +320,7 @@
         "Notes": "Upper areas, west of PoI where Champ Elemental spawns"
     },
     {
-        "Objective": "Creature Corral",
+        "Objective": "生物围栏",
         "Map": "https://wiki.guildwars2.com//images/thumb/0/05/Illuminating_Amnytas_-_41_Creature_Corral_map.png/150px-Illuminating_Amnytas_-_41_Creature_Corral_map.png",
         "Location": "https://wiki.guildwars2.com//images/thumb/4/4c/Illuminating_Amnytas_-_41_Creature_Corral_location.png/150px-Illuminating_Amnytas_-_41_Creature_Corral_location.png",
         "Closest landmark": "Creature Corral",
@@ -328,7 +328,7 @@
         "Notes": "In the rafters south of POI."
     },
     {
-        "Objective": "The Underways",
+        "Objective": "地下通道",
         "Map": "https://wiki.guildwars2.com//images/thumb/0/07/Illuminating_Amnytas_-_42_The_Underways_map.jpg/150px-Illuminating_Amnytas_-_42_The_Underways_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/8/86/Illuminating_Amnytas_-_42_The_Underways_location.jpg/150px-Illuminating_Amnytas_-_42_The_Underways_location.jpg",
         "Closest landmark": "The Underways",
@@ -336,7 +336,7 @@
         "Notes": "Behind the  Bastion of the Natural Waypoint — [&BDQOAAA=] jump down and enter the doorway into The Underways. The lantern is under the staircases"
     },
     {
-        "Objective": "Botanical Skygarden",
+        "Objective": "空中植物花园",
         "Map": "https://wiki.guildwars2.com//images/thumb/a/a2/Illuminating_Amnytas_-_43_Botanical_Skygarden_map.jpg/150px-Illuminating_Amnytas_-_43_Botanical_Skygarden_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/4/4a/Illuminating_Amnytas_-_43_Botanical_Skygarden_location.jpg/150px-Illuminating_Amnytas_-_43_Botanical_Skygarden_location.jpg",
         "Closest landmark": "Botanical Skygarden",
@@ -344,7 +344,7 @@
         "Notes": "On the west side of the roof"
     },
     {
-        "Objective": "The Infirmary",
+        "Objective": "医务室",
         "Map": "https://wiki.guildwars2.com//images/thumb/6/6c/Illuminating_Amnytas_-_44_The_Infirmary_map.png/150px-Illuminating_Amnytas_-_44_The_Infirmary_map.png",
         "Location": "https://wiki.guildwars2.com//images/thumb/3/3c/Illuminating_Amnytas_-_44_The_Infirmary_location.png/150px-Illuminating_Amnytas_-_44_The_Infirmary_location.png",
         "Closest landmark": "The Infirmary",
@@ -352,7 +352,7 @@
         "Notes": "Outside, right above, next to tower."
     },
     {
-        "Objective": "Bastionmere",
+        "Objective": "小小堡垒",
         "Map": "https://wiki.guildwars2.com//images/thumb/1/12/Illuminating_Amnytas_-_45_Bastionmere_map.jpg/150px-Illuminating_Amnytas_-_45_Bastionmere_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/0/04/Illuminating_Amnytas_-_45_Bastionmere_location.jpg/150px-Illuminating_Amnytas_-_45_Bastionmere_location.jpg",
         "Closest landmark": "Bastionmere",
@@ -360,7 +360,7 @@
         "Notes": "Southeast of PoI on a natural ledge"
     },
     {
-        "Objective": "Nature's Shore Meditation Circle",
+        "Objective": "自然海湾冥想地",
         "Map": "https://wiki.guildwars2.com//images/thumb/6/6c/Illuminating_Amnytas_-_46_Nature%27s_Shore_Meditation_Circle_map.jpg/150px-Illuminating_Amnytas_-_46_Nature%27s_Shore_Meditation_Circle_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/4/40/Illuminating_Amnytas_-_46_Nature%27s_Shore_Meditation_Circle_location.jpg/150px-Illuminating_Amnytas_-_46_Nature%27s_Shore_Meditation_Circle_location.jpg",
         "Closest landmark": "Nature's Shore Meditation Circle",
@@ -368,7 +368,7 @@
         "Notes": "By the ledge behind the tower"
     },
     {
-        "Objective": "Overmere Meditation Circle",
+        "Objective": "奥夫梅尔冥想地",
         "Map": "https://wiki.guildwars2.com//images/thumb/b/b9/Illuminating_Amnytas_-_47_Overmere_Meditation_Circle_map.jpg/150px-Illuminating_Amnytas_-_47_Overmere_Meditation_Circle_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/9/94/Illuminating_Amnytas_-_47_Overmere_Meditation_Circle_location.jpg/150px-Illuminating_Amnytas_-_47_Overmere_Meditation_Circle_location.jpg",
         "Closest landmark": "Overmere Meditation Circle",
@@ -376,7 +376,7 @@
         "Notes": "In front of tower. Tower is above  Bastion of the Natural Waypoint — [&BDQOAAA=] and to the west."
     },
     {
-        "Objective": "The Veranda",
+        "Objective": "游廊",
         "Map": "https://wiki.guildwars2.com//images/thumb/6/6c/Illuminating_Amnytas_-_48_The_Veranda_map.jpg/150px-Illuminating_Amnytas_-_48_The_Veranda_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/3/32/Illuminating_Amnytas_-_48_The_Veranda_location.jpg/150px-Illuminating_Amnytas_-_48_The_Veranda_location.jpg",
         "Closest landmark": "The Veranda",
@@ -384,7 +384,7 @@
         "Notes": "Behind pillar on the south side"
     },
     {
-        "Objective": "Concocter's Lab",
+        "Objective": "调料师的实验室",
         "Map": "https://wiki.guildwars2.com//images/thumb/c/ca/Illuminating_Amnytas_-_49_Concocter%27s_Lab_map.jpg/150px-Illuminating_Amnytas_-_49_Concocter%27s_Lab_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/b/b9/Illuminating_Amnytas_-_49_Concocter%27s_Lab_location.jpg/150px-Illuminating_Amnytas_-_49_Concocter%27s_Lab_location.jpg",
         "Closest landmark": "Concocter's Lab",
@@ -392,7 +392,7 @@
         "Notes": "Head west from the point of interest until you reach the outside of the room."
     },
     {
-        "Objective": "Vass's Tower",
+        "Objective": "瓦思之塔",
         "Map": "https://wiki.guildwars2.com//images/thumb/8/88/Illuminating_Amnytas_-_50_Vass%27s_Tower_map.jpg/150px-Illuminating_Amnytas_-_50_Vass%27s_Tower_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/6/6f/Illuminating_Amnytas_-_50_Vass%27s_Tower_location.jpg/150px-Illuminating_Amnytas_-_50_Vass%27s_Tower_location.jpg",
         "Closest landmark": "Vass's Tower",
@@ -400,7 +400,7 @@
         "Notes": "Inside the tower on the north side"
     },
     {
-        "Objective": "The Sea of Clouds",
+        "Objective": "云海",
         "Map": "https://wiki.guildwars2.com//images/thumb/d/d4/Illuminating_Amnytas_-_51_The_Sea_of_Clouds_map.jpg/150px-Illuminating_Amnytas_-_51_The_Sea_of_Clouds_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/4/47/Illuminating_Amnytas_-_51_The_Sea_of_Clouds_location.jpg/150px-Illuminating_Amnytas_-_51_The_Sea_of_Clouds_location.jpg",
         "Closest landmark": "The Sea of Clouds",
@@ -408,7 +408,7 @@
         "Notes": "Just North of the Point of Interest, at the edge of the island."
     },
     {
-        "Objective": "Island of Cognizance",
+        "Objective": "认知岛",
         "Map": "https://wiki.guildwars2.com//images/thumb/e/e2/Illuminating_Amnytas_-_52_Island_of_Cognizance_map.jpg/150px-Illuminating_Amnytas_-_52_Island_of_Cognizance_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/f/fb/Illuminating_Amnytas_-_52_Island_of_Cognizance_location.jpg/150px-Illuminating_Amnytas_-_52_Island_of_Cognizance_location.jpg",
         "Closest landmark": "Island of Cognizance",
@@ -416,7 +416,7 @@
         "Notes": "Slightly South East of the Point of Interest, same level and under a stone arch."
     },
     {
-        "Objective": "Gloaming Isle",
+        "Objective": "黄昏岛",
         "Map": "https://wiki.guildwars2.com//images/thumb/1/1e/Illuminating_Amnytas_-_53_Gloaming_Isle_map.jpg/150px-Illuminating_Amnytas_-_53_Gloaming_Isle_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/b/bc/Illuminating_Amnytas_-_53_Gloaming_Isle_location.jpg/150px-Illuminating_Amnytas_-_53_Gloaming_Isle_location.jpg",
         "Closest landmark": "Gloaming Isle",
@@ -424,7 +424,7 @@
         "Notes": "Northeast end between two rock structures"
     },
     {
-        "Objective": "Lonesome Steeple",
+        "Objective": "寂寞尖塔",
         "Map": "https://wiki.guildwars2.com//images/thumb/4/4d/Illuminating_Amnytas_-_54_Lonesome_Steeple_map.jpg/150px-Illuminating_Amnytas_-_54_Lonesome_Steeple_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/d/de/Illuminating_Amnytas_-_54_Lonesome_Steeple_location.jpg/150px-Illuminating_Amnytas_-_54_Lonesome_Steeple_location.jpg",
         "Closest landmark": "Lonesome Steeple",
@@ -432,7 +432,7 @@
         "Notes": "Immediately east of the PoI, outside the tower, watch for Elite Aether Hunter patrolling"
     },
     {
-        "Objective": "Spireshadow Lagoon",
+        "Objective": "尖影泄湖",
         "Map": "https://wiki.guildwars2.com//images/thumb/0/0f/Illuminating_Amnytas_-_55_Spireshadow_Lagoon_map.jpg/150px-Illuminating_Amnytas_-_55_Spireshadow_Lagoon_map.jpg",
         "Location": "https://wiki.guildwars2.com//images/thumb/e/ee/Illuminating_Amnytas_-_55_Spireshadow_Lagoon_location.jpg/150px-Illuminating_Amnytas_-_55_Spireshadow_Lagoon_location.jpg",
         "Closest landmark": "Spireshadow Lagoon",
