@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dxcam = "==0.0.5"
+pyside6 = "==6.7.2"
+pyside6-fluent-widgets = "==1.6.0"
+pywin32 = "==306"
+opencv-python = "==4.10.0.84"
+pyautogui = "==0.9.54"
+keyboard = "==0.13.5"
+cnocr = "==2.3.0.3"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
