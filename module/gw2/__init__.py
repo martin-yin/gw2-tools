@@ -60,10 +60,10 @@ class Gw2:
         _, score, _, top_left = minMaxLoc(res)
 
         if score > 0.8:
-            base_offset_width = int(340 * 1.5)
-            base_offset_height = int(570 * 1.5)
+            base_offset_width = int(340 * window_scale)
+            base_offset_height = int(570 * window_scale)
             rect = self.get_hwnd_rect()
-            letf = rect[0] + top_left[0] - int(16 * 1.5)
+            letf = rect[0] + top_left[0] - int(16 * window_scale)
             top = rect[1] + top_left[1]
             right = rect[0] + top_left[0] + base_offset_width
             bottom = rect[1] + top_left[1] + base_offset_height

@@ -26,6 +26,7 @@ class HomeInterface(ScrollArea):
             title="激战2",
             content="怕就别用, 用就别怕！"
         )
+
         self.runButton.clicked.connect(self.start_game)
         self.vBoxLayout.addWidget(image, alignment=Qt.AlignmentFlag.AlignCenter)
         self.vBoxLayout.addSpacing(10) 
@@ -49,7 +50,8 @@ class HomeInterface(ScrollArea):
             )
         else:
             self.runButton.setEnabled(False)
-            self.runButton.setText("已启动")
+            self.runButton.button.setText("已启动")
+            
 class FastOperationCard(ExpandGroupSettingCard):
     
     def __init__(self, parent=None):

@@ -4,9 +4,10 @@ import time
 from PySide6.QtCore import Signal, QThread
 from cv2 import  COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, cvtColor, imread, resize
 from module.gw2 import gw2_instance
-from module.ocr.ocr import OCR
+# from module.ocr.ocr import OCR
 from utils.image_processing import draw_covered, get_images_by_path, match_template
-from utils.utils import get_abs_path, open_file, root_path
+from utils.utils import get_abs_path, get_windows_scale, open_file, root_path
+from cnocr import CnOcr
 
 class DetectionLightingThread(QThread):
     detectionFinished = Signal(object)
@@ -28,9 +29,10 @@ class DetectionLightingThread(QThread):
 
     def process_img_list(self, img_list):
         """ 处理后的图片 """
+        window_scale = get_windows_scale()
         processed_img_list = []
         done_hook_path = os.path.join(root_path(), "assets", "achievements", "done_hook.png")
-        done_hook = resize(imread(done_hook_path, IMREAD_GRAYSCALE), None, fx=1.5, fy=1.5, interpolation=INTER_LINEAR)
+        done_hook = resize(imread(done_hook_path, IMREAD_GRAYSCALE), None, fx=window_scale, fy=window_scale, interpolation=INTER_LINEAR)
         for img in img_list:
             img = cvtColor(img, COLOR_BGR2GRAY)
             match_result = match_template(img, done_hook)
@@ -38,6 +40,17 @@ class DetectionLightingThread(QThread):
             processed_img_list.append(drawed_image) 
         return processed_img_list
 
+    def ocr_img_list(self, img_list):
+        """ 图片识别 """
+        ocr = CnOcr()
+        ocr_text_list = []
+        for img in img_list:
+            ocr_result = ocr.ocr(img)
+            for item in ocr_result:
+                ocr_text_list.append(item.get('text'))
+        print(ocr_text_list)
+        return ocr_text_list
+    
     def run(self):
         """ 运行检测 """
         not_done_list = []
@@ -63,16 +76,10 @@ class DetectionLightingThread(QThread):
                 })
                 return 
         try:
-            ocr = OCR()
             achievement_data = open_file(get_abs_path(self.achievement['data_path']))
             # 获取成就数据
             processed_img_list = self.process_img_list(img_list)
-            ocr_result = ocr.run_list(processed_img_list)
-            ocr_text_list = []
-            for ocr_item in ocr_result:
-                ocr_text = ocr_item[1][0]
-                ocr_text_list.append(ocr_text)
-                
+            ocr_text_list = self.ocr_img_list(processed_img_list)
             for achievement_item in achievement_data:
                 objective = achievement_item.get("Objective")
                 if objective in ocr_text_list:
@@ -83,9 +90,7 @@ class DetectionLightingThread(QThread):
                 "data": not_done_list,
                 "type": "success",
             })
-            ocr.exit()
         except Exception as e:
-            ocr.exit()
             self.detectionFinished.emit({
                 "msg":"检测失败……请稍后再试，不行请咨询作者",
                 "data": [],
