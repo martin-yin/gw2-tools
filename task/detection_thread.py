@@ -2,7 +2,7 @@
 import os
 import time
 from PySide6.QtCore import Signal, QThread
-from cv2 import  COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, cvtColor, imread, resize, imwrite
+from cv2 import  COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, cvtColor, imread, resize
 from module.gw2 import gw2_instance
 from utils.image_processing import draw_covered, get_images_by_path, match_template
 from utils.utils import get_abs_path, get_windows_scale, open_file, root_path

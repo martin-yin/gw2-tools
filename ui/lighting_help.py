@@ -148,8 +148,8 @@ class DetectionTableWidget(QWidget):
 
         self.table = TableWidget(self)
         self.table.setColumnCount(3)
-        self.table.setColumnWidth(0, 260)
-        self.table.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
+        self.table.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
+        self.table.setColumnWidth(1, 200)
         self.table.setColumnWidth(2, 100)
 
         self.table.horizontalHeader().setVisible(False)

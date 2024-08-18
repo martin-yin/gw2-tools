@@ -1,9 +1,7 @@
 import os
-from time import sleep
 from PySide6.QtCore import QThread, Signal
 import keyboard
-import pyautogui
-from module.ocr.ocr import OCR
+# from module.ocr.ocr import OCR
 
 class HotkeyThread(QThread):
     finished = Signal(bool)
