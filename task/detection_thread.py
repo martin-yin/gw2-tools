@@ -2,7 +2,7 @@
 import os
 import time
 from PySide6.QtCore import Signal, QThread
-from cv2 import  COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, cvtColor, imread, resize
+from cv2 import  COLOR_BGR2GRAY, IMREAD_GRAYSCALE, INTER_LINEAR, cvtColor, imread, resize, imwrite
 from module.gw2 import gw2_instance
 # from module.ocr.ocr import OCR
 from utils.image_processing import draw_covered, get_images_by_path, match_template
@@ -20,11 +20,11 @@ class DetectionLightingThread(QThread):
 
     def scroll_screenshot(self, position):
         screenshot_list = []
-        for i in range(5):
+        for i in range(6):
             screenshot = self.gw2_instance.get_frame(position)
             screenshot_list.append(screenshot)
             time.sleep(0.1)
-            self.gw2_instance.scroll(5)
+            self.gw2_instance.scroll(6)
         return screenshot_list
 
     def process_img_list(self, img_list):
@@ -48,7 +48,6 @@ class DetectionLightingThread(QThread):
             ocr_result = ocr.ocr(img)
             for item in ocr_result:
                 ocr_text_list.append(item.get('text'))
-        print(ocr_text_list)
         return ocr_text_list
     
     def run(self):
